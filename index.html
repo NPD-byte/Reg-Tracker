@@ -237,7 +237,7 @@ tbody tr:not(.detail):hover{background:var(--plumbg)}
     <div class="mast-txt">
       <div class="kick">Unified Legal Intelligence · US · EU &amp; UK · Africa · Caribbean · Asia · Global</div>
       <h1>Governance Radar</h1>
-      <div class="date">Database of record: <span id="dbDate">July 22, 2026</span> · <span id="catCount"></span> categories · 5 domains · <span id="jurCount"></span> jurisdictions</div>
+      <div class="date">Database of record: <span id="dbDate">October 2, 2026</span> · <span id="catCount"></span> categories · 5 domains · <span id="jurCount"></span> jurisdictions</div>
       <div class="clearband" id="clearBand" title="Every entry is mapped to the CLEAR™ Framework — click to explore">
         <span class="cb-lab">Structured on the CLEAR™ Framework</span>
         <span class="cb-p" data-p="C"><b>C</b>larity</span><span class="cb-p" data-p="L"><b>L</b>egal &amp; Risk</span><span class="cb-p" data-p="E"><b>E</b>nablement</span><span class="cb-p" data-p="A"><b>A</b>ccountability</span><span class="cb-p" data-p="R"><b>R</b>esponsible Execution</span>
@@ -602,7 +602,7 @@ const daysTo=d=>Math.round((new Date(d+"T00:00:00")-today)/864e5);
 const stageColor={"In effect":"var(--green)","Enacted — phasing in":"var(--teal)","Passed into law":"#5e7d2e","Passed chamber":"var(--blue)","In committee":"var(--amber)","Proposed":"var(--amber)","Enjoined":"var(--red)","Failed":"var(--gray)","Withdrawn":"var(--gray)"};
 const domainName={ai:"AI & Automated Decision-Making",privacy:"Privacy & Data Protection",kids:"Children's Online Safety",cyber:"Cybersecurity & Breach",cross:"Cross-Cutting"};
 const PILLARS={C:"Clarity",L:"Legal & Risk Alignment",E:"Enablement",A:"Accountability",R:"Responsible Execution"};
-const DB_DATE="2026-07-22"; // database of record; per-entry x.lv overrides when the digest re-verifies
+const DB_DATE="2026-10-02"; // database of record; per-entry x.lv overrides when the digest re-verifies
 const lvOf=x=>x.lv||DB_DATE;
 const lvStale=x=>Math.round((today-new Date(lvOf(x)+"T00:00:00"))/864e5)>90;
 const PILLAR_DEF={
