@@ -125,6 +125,24 @@ tbody tr:not(.detail):hover{background:var(--plumbg)}
 .pilsec ul{margin:10px 0 0 18px}
 .pilsec li{font-size:12.5px;line-height:1.7}
 .pilsec.flash{animation:pflash 1.6s ease}
+/* CLEAR(TM) pillar colours, carried through tags, filters, banner and pillar sections */
+[data-p="C"]{--pc:#2f5aa8;--pct:#2f5aa8;--pcbg:#e8eef8}
+[data-p="L"]{--pc:#b3243b;--pct:#b3243b;--pcbg:#f8e6e9}
+[data-p="E"]{--pc:#2f7d4f;--pct:#2f7d4f;--pcbg:#e6f2ea}
+[data-p="A"]{--pc:#6E4B63;--pct:#6E4B63;--pcbg:#f1eaef}
+[data-p="R"]{--pc:#c9701f;--pct:#a65812;--pcbg:#fbeedf}
+.cpill[data-p]{border-color:var(--pc);color:var(--pct)}
+.cpill[data-p]:hover{background:var(--pcbg)}
+.cpill[data-p].active{background:var(--pct);border-color:var(--pct);color:#fff}
+.cltag[data-p]{border-color:var(--pc);color:var(--pct);background:var(--pcbg)}
+.cltag[data-p]:hover{background:var(--pct);border-color:var(--pct);color:#fff}
+.pilbanner[data-p]{border-left-color:var(--pc);background:var(--pcbg)}
+.pilbanner[data-p] b{color:var(--pct)}
+.pilsec[data-p]{border-top-color:var(--pc)}
+.pilsec[data-p] h3,.pilsec[data-p] .q{color:var(--pct)}
+.pilsec[data-p] .btn.primary{background:var(--pct);border-color:var(--pct)}
+.clearband .cb-p[data-p]{border-color:var(--pc)}
+.clearband .cb-p[data-p] b{color:var(--pct)}
 @keyframes pflash{0%{background:var(--plumbg)}100%{background:var(--card)}}
 .detail{display:none;background:#f6f0e4}
 .detail.open{display:table-row}
@@ -220,7 +238,7 @@ tbody tr:not(.detail):hover{background:var(--plumbg)}
       <div class="date">Database of record: September 3, 2026 ·<span id="catCount"></span> categories · 5 domains · <span id="jurCount"></span> jurisdictions</div>
       <div class="clearband" id="clearBand" title="Every entry is mapped to the CLEAR™ Framework — click to explore">
         <span class="cb-lab">Structured on the CLEAR™ Framework</span>
-        <span class="cb-p"><b>C</b>larity</span><span class="cb-p"><b>L</b>egal &amp; Risk</span><span class="cb-p"><b>E</b>nablement</span><span class="cb-p"><b>A</b>ccountability</span><span class="cb-p"><b>R</b>esponsible Execution</span>
+        <span class="cb-p" data-p="C"><b>C</b>larity</span><span class="cb-p" data-p="L"><b>L</b>egal &amp; Risk</span><span class="cb-p" data-p="E"><b>E</b>nablement</span><span class="cb-p" data-p="A"><b>A</b>ccountability</span><span class="cb-p" data-p="R"><b>R</b>esponsible Execution</span>
       </div>
     </div>
     <div class="mast-logo">
@@ -617,6 +635,7 @@ function updatePillarBanner(){
   const total=DATA.filter(x=>(x.cl||[]).includes(p)).length;
   const of=otherFilters();
   el.style.display="";
+  el.dataset.p=p;
   el.innerHTML=`<b>CLEAR™ · ${p} — ${PILLARS[p]}.</b> <i>${def.q}</i> ${def.d} <b>Showing ${n} of ${total}.</b>`
     +(n<total?` <a href="#" id="pilClear">Show all ${total} →</a>`:"")
     +` <a href="#" id="pilMore">About this pillar →</a>`;
@@ -632,7 +651,7 @@ function renderClearPage(){
     const laws=DATA.filter(x=>(x.cl||[]).includes(p));
     const cs=CASES.filter(c=>(c.cl||[]).includes(p));
     const ex=laws.filter(x=>["In effect","Enacted — phasing in","Passed into law"].includes(x.s)).sort((a,b)=>(b.eff||"")<(a.eff||"")?-1:1).slice(0,4);
-    return `<div class="pilsec" id="pil-${p}">
+    return `<div class="pilsec" id="pil-${p}" data-p="${p}">
       <h3>${p} · ${name}</h3>
       <div class="q">${PILLAR_DEF[p].q}</div>
       <p>${PILLAR_DEF[p].d}</p>
