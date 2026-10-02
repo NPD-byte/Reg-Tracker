@@ -46,7 +46,8 @@ a{color:var(--plum)}
 .stat:first-child{border-left:none;padding-left:0}
 .stat b{display:block;font-family:var(--serif);font-size:24px;color:var(--plum)}
 .stat span{font-size:9.5px;letter-spacing:1.4px;color:var(--muted);text-transform:uppercase}
-.clearband{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px;cursor:pointer}
+.clearband{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px}
+.clearband{cursor:pointer}
 .clearband .cb-lab{font-family:var(--serif);font-weight:700;color:var(--plum);font-size:12px;margin-right:6px}
 .clearband .cb-p{font-size:10.5px;letter-spacing:.4px;color:var(--gray);border:1px solid var(--hair);border-radius:2px;padding:2px 7px}
 .clearband .cb-p b{color:var(--plum)}
@@ -54,6 +55,7 @@ a{color:var(--plum)}
 .syncbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid var(--hair)}
 .syncbar .sync-meta{font-size:11.5px;color:var(--muted);line-height:1.5;flex:1;min-width:200px}
 .syncbar .btn.primary[disabled]{opacity:.55;cursor:default}
+.syncbar.busy .btn.primary{position:relative}
 .disclaimer{font-size:11.5px;color:var(--muted);font-style:italic;font-family:var(--serif);margin-bottom:20px;line-height:1.6}
 /* ---- panels ---- */
 .panel{background:var(--card);border:1px solid var(--hair);border-radius:4px;padding:18px 20px;margin-bottom:16px}
@@ -235,7 +237,7 @@ tbody tr:not(.detail):hover{background:var(--plumbg)}
     <div class="mast-txt">
       <div class="kick">Unified Legal Intelligence · US · EU &amp; UK · Africa · Caribbean · Asia · Global</div>
       <h1>Governance Radar</h1>
-      <div class="date">Database of record: September 3, 2026 ·<span id="catCount"></span> categories · 5 domains · <span id="jurCount"></span> jurisdictions</div>
+      <div class="date">Database of record: <span id="dbDate">July 22, 2026</span> · <span id="catCount"></span> categories · 5 domains · <span id="jurCount"></span> jurisdictions</div>
       <div class="clearband" id="clearBand" title="Every entry is mapped to the CLEAR™ Framework — click to explore">
         <span class="cb-lab">Structured on the CLEAR™ Framework</span>
         <span class="cb-p" data-p="C"><b>C</b>larity</span><span class="cb-p" data-p="L"><b>L</b>egal &amp; Risk</span><span class="cb-p" data-p="E"><b>E</b>nablement</span><span class="cb-p" data-p="A"><b>A</b>ccountability</span><span class="cb-p" data-p="R"><b>R</b>esponsible Execution</span>
@@ -391,7 +393,7 @@ tbody tr:not(.detail):hover{background:var(--plumbg)}
 
 <div id="tab-review" style="display:none">
   <div class="panel" style="border-left:3px solid var(--amber)">
-    <p style="font-size:12.5px;color:#4e463c;line-height:1.6"><b>Human in the loop.</b> Nothing in this radar should be relied upon professionally until a human has checked it against the primary source. This queue lists every entry carrying known uncertainty — plus changes the Monday digest makes, which land here as <i>pending approval</i> until you've reviewed them. Tick an item to mark it reviewed on this device; tell Claude to correct the database itself.</p>
+    <p style="font-size:12.5px;color:#4e463c;line-height:1.6"><b>Human in the loop.</b> Nothing in this radar should be relied upon professionally until a human has checked it against the primary source. This queue lists every entry carrying known uncertainty — plus changes the Monday digest makes, which land here as <i>pending approval</i> until you've reviewed them. Tick an item once verified: it leaves the open queue, files into the archive below with a jump link, and its entry in the Database or Docket Watch is marked ✓ reviewed — all on this device. To correct the record itself, tell Claude.</p>
   </div>
   <div class="count" id="revCount"></div>
   <div id="reviewList"></div>
@@ -540,28 +542,40 @@ function renderFoundations(){
    </div>`).join("");
 }
 const REVIEW = [
- {i:1,k:"Bill status",t:"Great American AI Act (discussion draft)",issue:"Details drawn from early reporting on a discussion draft; sponsor text not yet reviewed.",how:"Locate the draft text and sponsors on congress.gov before citing.",d:"2026-07-22"},
- {i:2,k:"Docket",t:"Concord Music v. Anthropic II (5:26-cv-00880) — stay status",issue:"Motion to stay noted; outcome unverified.",how:"Check the docket on CourtListener before relying on the Oct 21 2026 SJ date.",d:"2026-07-22"},
- {i:3,k:"Docket",t:"Character.AI cases — federal MDL consolidation",issue:"Consolidation pool noted but formal MDL grant unconfirmed.",how:"Check the JPML docket.",d:"2026-07-22"},
- {i:4,k:"Docket",t:"Litigation docket numbers (Raine; Disney/Universal v. Midjourney; Dow Jones v. Perplexity)",issue:"Several docket numbers and next-dates are best-effort from secondary reporting.",how:"Cite-check on CourtListener/PACER before professional use.",d:"2026-07-22"},
- {i:5,k:"Implementation",t:"Egypt PDPL executive regulations",issue:"Enforcement described as awaiting executive regulations; status may have changed.",how:"Check MCIT/PDPC announcements.",d:"2026-07-22"},
- {i:6,k:"Implementation",t:"African implementation timelines (Cameroon decrees, Ethiopia directives, Senegal reform)",issue:"Authority stand-up and implementing-rule dates are approximate.",how:"Verify with the national regulator before advising on these markets.",d:"2026-07-22"},
- {i:7,k:"Implementation",t:"UK DUAA commencement — which UK GDPR amendments are in force",issue:"Phased commencement regulations were still landing at compilation.",how:"Check the latest commencement SI on legislation.gov.uk.",d:"2026-07-22"},
- {i:8,k:"Bill status",t:"UK under-16 social media ban — legislative vehicle",issue:"Tracked from the government announcement (incl. Jul 15, 2026 curfew statement); the bill, mechanism (OSA powers vs new act) and dates are unconfirmed.",how:"Watch bills.parliament.uk and DSIT statements; update stage when a bill is introduced.",d:"2026-07-22"},
- {i:9,k:"Docket",t:"Wikimedia v Ofcom (OSA categorisation JR) — outcome details",issue:"Dismissal and proportionality signals recorded from secondary reporting; judgment citation and any appeal not verified.",how:"Check the judgment on Find Case Law / judiciary.uk.",d:"2026-07-22"},
- {i:10,k:"Docket",t:"Emotional Perception AI (UKSC) — precise holding",issue:"Judgment date (Feb 11, 2026) and Aerotel overhaul recorded; the exact holding on ANN patentability needs reading before citing.",how:"Read the judgment at supremecourt.uk; refine the case summary.",d:"2026-07-22"},
- {i:11,k:"Implementation",t:"DSA designation of ChatGPT (VLOSE) — exact compliance date",issue:"The Commission's press release says four months from notification, 'i.e. by January 2027'; no precise day is given. Effective date recorded as 2027-01-31 as a placeholder.",how:"Read the designation decision and press release IP/26/1772 for the notification date, then set the exact deadline.",d:"2026-09-03"},
- {i:12,k:"Bill status",t:"California SB 1119 (Adam's Law) — signature, effective date, penalties",issue:"Passed both chambers Aug 31, 2026 and sent to the Governor; not yet signed. Stage recorded as 'Passed chamber'; introduction date, operative date and penalty provisions are not yet verified.",how:"Track SB 1119 (2025-2026) on leginfo.legislature.ca.gov for chaptering, then read the enrolled text for the operative date and enforcement mechanism.",d:"2026-09-03"},
- {i:13,k:"Bill status",t:"California 2026 session AI/privacy package — bill-by-bill status",issue:"Reporting counts roughly 16 AI bills and 8 privacy bills cleared before the Aug 31 deadline; individual bills are not yet itemised as tracker records, and the Governor's action deadline is unverified.",how:"Reconcile against leginfo and the Governor's action list; add the significant bills as individual records once signed.",d:"2026-09-03"},
- {i:14,k:"Docket",t:"US Government brief on training fair use (case 35) — filing type and scope",issue:"Recorded from press reporting of a brief filed Sept 1, 2026. Whether it is a Statement of Interest under 28 U.S.C. § 517 or an amicus brief, and which cases it covers, has not been confirmed from the filing itself.",how:"Pull the filing from CourtListener/PACER in the SDNY OpenAI MDL and confirm the caption, filing type and scope before citing.",d:"2026-09-03"},
- {i:15,k:"Bill status",t:"UK Cyber Security & Resilience (NIS) Bill — Lords stages and Royal Assent",issue:"bills.parliament.uk shows Lords Committee stage in progress (page last updated Sep 2, 2026). 'Royal Assent expected late 2026' remains an expectation, not a scheduled date.",how:"Watch bills.parliament.uk/bills/4035/stages for Report stage, Third Reading and Royal Assent.",d:"2026-09-03"}
+ {i:1,k:"Bill status",t:"Great American AI Act (discussion draft)",issue:"Details drawn from early reporting on a discussion draft; sponsor text not yet reviewed.",how:"Locate the draft text and sponsors on congress.gov before citing.",d:"2026-07-22",a:"db",q:"Great American",refs:["great american ai act"]},
+ {i:2,k:"Docket",t:"Concord Music v. Anthropic II (5:26-cv-00880) — stay status",issue:"Motion to stay noted; outcome unverified.",how:"Check the docket on CourtListener before relying on the Oct 21 2026 SJ date.",d:"2026-07-22",a:"cases",refs:["concord music"]},
+ {i:3,k:"Docket",t:"Character.AI cases — federal MDL consolidation",issue:"Consolidation pool noted but formal MDL grant unconfirmed.",how:"Check the JPML docket.",d:"2026-07-22",a:"cases",refs:["character"]},
+ {i:4,k:"Docket",t:"Litigation docket numbers (Raine; Disney/Universal v. Midjourney; Dow Jones v. Perplexity)",issue:"Several docket numbers and next-dates are best-effort from secondary reporting.",how:"Cite-check on CourtListener/PACER before professional use.",d:"2026-07-22",a:"cases",refs:["raine","midjourney","perplexity"]},
+ {i:5,k:"Implementation",t:"Egypt PDPL executive regulations",issue:"Enforcement described as awaiting executive regulations; status may have changed.",how:"Check MCIT/PDPC announcements.",d:"2026-07-22",a:"db",q:"Egypt",refs:["egypt"]},
+ {i:6,k:"Implementation",t:"African implementation timelines (Cameroon decrees, Ethiopia directives, Senegal reform)",issue:"Authority stand-up and implementing-rule dates are approximate.",how:"Verify with the national regulator before advising on these markets.",d:"2026-07-22",a:"db",q:"Cameroon",refs:["cameroon","ethiopi","senegal"]},
+ {i:7,k:"Implementation",t:"UK DUAA commencement — which UK GDPR amendments are in force",issue:"Phased commencement regulations were still landing at compilation.",how:"Check the latest commencement SI on legislation.gov.uk.",d:"2026-07-22",a:"db",q:"Data (Use and Access",refs:["data (use and access"]},
+ {i:8,k:"Bill status",t:"UK under-16 social media ban — implementing regulations",issue:"Vehicle now confirmed (CWSA 2026 s.70 → OSA s.214A, per Oct 2 refresh); the implementing regulations, their laying date and the spring-2027 commencement remain unconfirmed until laid.",how:"Verify s.70 CWSA 2026 on legislation.gov.uk and watch for the s.214A regulations before advising.",d:"2026-10-02",a:"db",q:"under-16",refs:["under-16"]},
+ {i:9,k:"Docket",t:"Wikimedia v Ofcom (OSA categorisation JR) — outcome details",issue:"Dismissal and proportionality signals recorded from secondary reporting; judgment citation and any appeal not verified.",how:"Check the judgment on Find Case Law / judiciary.uk.",d:"2026-07-22",a:"cases",refs:["wikimedia"]},
+ {i:10,k:"Docket",t:"Emotional Perception AI (UKSC) — precise holding",issue:"Judgment date (Feb 11, 2026) and Aerotel overhaul recorded; the exact holding on ANN patentability needs reading before citing.",how:"Read the judgment at supremecourt.uk; refine the case summary.",d:"2026-07-22",a:"cases",refs:["emotional perception"]},
+ {i:11,k:"Digest update",t:"October refresh — docket changes (OpenAI MDL SJ motions, UMG v Suno II, FTC 6(b) inquiry)",issue:"Added from the Oct 2, 2026 digest using primary-adjacent reporting; docket numbers and response deadlines not yet cite-checked.",how:"Verify on CourtListener (MDL 25-md-03143) and ftc.gov press releases before professional use.",d:"2026-10-02",a:"cases",refs:["ftc 6(b)","suno"]},
+ {i:12,k:"Digest update",t:"California September package — bill numbers & effective dates (SB 813 + chatbot/child-safety + worker laws)",issue:"Entries added from the governor’s announcements and press reporting; individual bill numbers, chaptering and effective dates not yet verified on leginfo.",how:"Confirm each measure on leginfo.legislature.ca.gov and update the two California entries with bill numbers and dates.",d:"2026-10-02",a:"db",q:"California",refs:["sb 813","chatbot & child"]}
 ];
+const REV_AREAS={db:{t:"Database",tab:"db"},cases:{t:"Docket Watch",tab:"cases"}};
+function revGo(id){
+  const r=REVIEW.find(x=>x.i===id); if(!r) return;
+  const a=REV_AREAS[r.a]||REV_AREAS.db;
+  if(r.a==="db"){state.q=r.q||"";const s=document.getElementById("search");if(s)s.value=state.q;}
+  const btn=document.querySelector(`.nav button[data-tab="${a.tab}"]`); if(btn) btn.click();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function revFor(name){
+  const n=(name||"").toLowerCase(); const done=revStore.get(); let open=false,filed=false;
+  REVIEW.forEach(r=>{ if((r.refs||[]).some(f=>n.includes(f))){ if(done.includes(r.i)) filed=true; else open=true; } });
+  return (open||filed)?{open:open,filed:filed}:null;
+}
 const FEEDS = [
- {d:"2026-08-31",t:"EU designates ChatGPT a Very Large Online Search Engine under the DSA",p:"The Commission designated ChatGPT as a VLOSE, and Reddit and Roblox as VLOPs, on Aug 31. Four months — to January 2027 — to stand up annual systemic-risk assessment and mitigation, independent audits, researcher data access and an ad repository. The first time a general-purpose AI assistant is regulated as a search engine. Action: treat DSA systemic-risk work as an AI governance workstream, not a content-moderation one.",tag:"high"},
- {d:"2026-08-31",t:"California closes its session with ~16 AI bills and 8 privacy bills passed",p:"Headline measure: SB 1119 (Adam's Law) on companion chatbots and children's safety — age determination, pre-deployment risk mitigation for minors, independent audits. Also amendments to the AI Transparency Act, employment and health-care AI, and AI auditor regulation. All now await the Governor's signature.",tag:"high"},
- {d:"2026-09-01",t:"US Government backs OpenAI: LLM training is fair use",p:"DOJ filed a brief on Sept 1 siding with OpenAI in the SDNY copyright MDL, arguing training on copyrighted works is fair use and that any change should come from Congress. The first time the federal government has taken a position in the AI training-data wave — a thumb on the scale across every US case.",tag:"high"},
- {d:"2026-09-01",t:"US presses G20 for light-touch AI rules — the 'Carolina Principles'",p:"At the G20 Innovation Ministerial in Chapel Hill, OSTP's Michael Kratsios urged governments to 'reserve new regulation for novel considerations' and fund foundational research. The divergence from the EU and US-state trajectory is now explicit — multinationals should plan for two regimes, not one.",tag:"med"},
- {d:"2026-09-02",t:"UK Cyber Security & Resilience Bill enters Lords Committee stage",p:"Line-by-line scrutiny began Sept 1; the bill page was last updated Sept 2. Brings managed service providers, data centres and critical suppliers into NIS-style regulation, with the ICO and Ofcom as operational regulators. Royal Assent still expected late 2026, with phased implementation to 2028.",tag:"med"},
+ {d:"2026-10-01",t:"Connecticut SB 5: first obligations live Oct 1",p:"Phase one of the omnibus AI act is now in effect: AI-subscription disclosure and consent, employment-AI notices to workers and applicants, AI-related layoff disclosures, and frontier-model whistleblower channels. First state omnibus-AI compliance deadline of the season.",tag:"high"},
+ {d:"2026-09-30",t:"FTC turns from guidance to inquiry on AI",p:"Sep 11: 6(b) orders to seven companion-chatbot companies on child-safety testing and engagement monetization; Sep 30 reporting signals the probe is broadening across AI firms. Florida’s AG is separately proposing criminal liability for AI that abets crimes.",tag:"high"},
+ {d:"2026-09-18",t:"California’s September AI package lands",p:"SB 813 creates the first state framework for certified independent AI-verification organizations (Sep 9); chatbot child-safety laws add pre-rollout risk assessments and up to $1M per-child penalties (Sep 10); worker-protection and AI-ad disclosure laws follow (Sep 16); a kill-switch executive order rounds it out (Sep 18).",tag:"high"},
+ {d:"2026-09-16",t:"UK under-16 ban: vehicle confirmed, spring 2027 target",p:"s.70 of the Children’s Wellbeing and Schools Act 2026 inserts s.214A into the OSA; government aims to lay the implementing regulations by end-2026 with the ban effective spring 2027. Curfews and function blocks as announced.",tag:"high"},
+ {d:"2026-09-15",t:"UK Cyber Security & Resilience Bill clears Lords committee",p:"Grand Committee concluded Sep 15 after four sittings; report stage next, Royal Assent now expected around the turn of 2027 with phased commencement to 2028.",tag:"med"},
+ {d:"2026-09-04",t:"OpenAI MDL: cross-motions for summary judgment on fair use",p:"The main event begins — NYT and Authors Guild SJ motions filed Sep 4; new coordinated suits (26 local publishers; chat-log human-review privacy claims) joined mid-September. Whatever ruling emerges is the one the Second Circuit reviews.",tag:"high"},
+ {d:"2026-09-02",t:"EU: GPAI enforcement powers and Art. 50 guidance now operational",p:"Commission enforcement powers for GPAI obligations apply since Aug 2; Art. 50 transparency guidelines (approved Jul 20) and the synthetic-content Code of Practice (Jun 10) are the working compliance baseline for chatbot disclosure and content marking.",tag:"med"},
  {d:"2026-07-15",t:"UK announces under-16 social media ban + overnight curfews for 16–17s",p:"Australia-model ban, going further: livestreaming and stranger-contact functions blocked for under-16s; default midnight–6am curfews for 16–17-year-olds. Legislative vehicle TBC — tracked as Proposed.",tag:"high"},
  {d:"2026-06-17",t:"Cyber Security & Resilience Bill reaches the Lords",p:"Cleared the Commons; HL Bill 32 since Jun 17. Proposed fines up to £17M or 4% of global turnover, 24-hour incident reporting, MSPs and data centres in scope. Royal Assent expected late 2026.",tag:"med"},
  {d:"2026-02-11",t:"UKSC resets AI patentability: Emotional Perception AI",p:"The Supreme Court overhauls the Aerotel test for computer-implemented inventions, aligning UK practice with the EPO. UK AI patent strategy starts from this judgment now.",tag:"med"},
@@ -588,7 +602,7 @@ const daysTo=d=>Math.round((new Date(d+"T00:00:00")-today)/864e5);
 const stageColor={"In effect":"var(--green)","Enacted — phasing in":"var(--teal)","Passed into law":"#5e7d2e","Passed chamber":"var(--blue)","In committee":"var(--amber)","Proposed":"var(--amber)","Enjoined":"var(--red)","Failed":"var(--gray)","Withdrawn":"var(--gray)"};
 const domainName={ai:"AI & Automated Decision-Making",privacy:"Privacy & Data Protection",kids:"Children's Online Safety",cyber:"Cybersecurity & Breach",cross:"Cross-Cutting"};
 const PILLARS={C:"Clarity",L:"Legal & Risk Alignment",E:"Enablement",A:"Accountability",R:"Responsible Execution"};
-const DB_DATE="2026-09-03"; // database of record; per-entry x.lv overrides when the digest re-verifies
+const DB_DATE="2026-07-22"; // database of record; per-entry x.lv overrides when the digest re-verifies
 const lvOf=x=>x.lv||DB_DATE;
 const lvStale=x=>Math.round((today-new Date(lvOf(x)+"T00:00:00"))/864e5)>90;
 const PILLAR_DEF={
@@ -861,6 +875,7 @@ function renderTable(){
       ${x.obl?`<br><b>Key obligations:</b> ${x.obl}`:""}
       ${(x.cl&&x.cl.length)?`<div style="margin-top:10px">${x.cl.map(p=>`<span class="cltag" data-p="${p}" title="Click to learn what this pillar means">CLEAR™ · ${p} — ${PILLARS[p]}</span>`).join("")}<span style="font-size:10.5px;color:var(--muted);font-style:italic"> · click a tag to learn the pillar</span></div>`:""}
       <div style="margin-top:8px;font-size:11px;color:${lvStale(x)?"var(--amber)":"var(--muted)"}">${lvStale(x)?"⚠ ":"✓ "}Last verified ${fmt(lvOf(x))}${lvStale(x)?" — due a re-check (>90 days)":""}</div>
+      ${(()=>{const rv=revFor(x.n);return rv?`<div style="margin-top:4px;font-size:11px;font-weight:700;color:${rv.open?"var(--amber)":"var(--green)"}">${rv.open?"⚠ In the Review Queue — verification pending":"✓ Verified via the Review Queue on this device"}</div>`:""})()}
       <div class="ind">${(x.ind||[]).map(i=>`<span>${i}</span>`).join("")}</div>
       <a href="${x.src}" target="_blank" rel="noopener">Primary source ↗</a>
     </td></tr>`;
@@ -881,7 +896,7 @@ function renderCases(){
     const fg=caseStatusColor[c.st]||"var(--gray)";
     return `<div class="case">
       <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start">
-        <div><h3>${c.cap}</h3><div class="meta">${c.ct} · Filed ${fmt(c.fd)} · <span class="cat">${c.ar}</span> ${(c.cl||[]).map(p=>`<span class="cltag" data-p="${p}" title="CLEAR™ ${PILLARS[p]} — click to learn more">${p} · ${PILLARS[p]}</span>`).join("")}</div></div>
+        <div><h3>${c.cap}</h3><div class="meta">${c.ct} · Filed ${fmt(c.fd)} · <span class="cat">${c.ar}</span> ${(c.cl||[]).map(p=>`<span class="cltag" data-p="${p}" title="CLEAR™ ${PILLARS[p]} — click to learn more">${p} · ${PILLARS[p]}</span>`).join("")}${(()=>{const rv=revFor(c.cap+" "+(c.co||""));return rv?` <span style="font-size:10.5px;font-weight:700;color:${rv.open?"var(--amber)":"var(--green)"}">${rv.open?"⚠ queue: verification pending":"✓ reviewed on this device"}</span>`:""})()}</div></div>
         <span class="badge" style="color:${fg}"><i style="background:${fg}"></i>${c.st}</span>
       </div>
       <p>${c.sum}</p>
@@ -896,25 +911,30 @@ function renderCases(){
 const revStore={get(){try{return JSON.parse(localStorage.getItem("urit-reviewed")||"[]")}catch(e){return[]}},set(v){try{localStorage.setItem("urit-reviewed",JSON.stringify(v))}catch(e){}}};
 function renderReview(){
   const done=revStore.get();
-  const open=REVIEW.filter(r=>!done.includes(r.i)).length;
-  $("revBadge").textContent=open?` (${open})`:"";
-  $("revCount").textContent=open+" open · "+done.length+" reviewed on this device";
-  $("reviewList").innerHTML=REVIEW.map(r=>{
-    const ok=done.includes(r.i);
-    return `<div class="case" style="border-top-color:${ok?"var(--green)":"var(--amber)"};opacity:${ok?".55":"1"}">
+  const openItems=REVIEW.filter(r=>!done.includes(r.i));
+  const filed=REVIEW.filter(r=>done.includes(r.i));
+  $("revBadge").textContent=openItems.length?` (${openItems.length})`:"";
+  $("revCount").textContent=openItems.length+" open · "+filed.length+" reviewed & filed on this device";
+  const card=(r,ok)=>`<div class="case" style="border-top-color:${ok?"var(--green)":"var(--amber)"};opacity:${ok?".8":"1"}">
       <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start">
-        <div><h3 style="font-size:15px">${r.t}</h3><div class="meta"><span class="cat">${r.k}</span> · flagged ${fmt(r.d)}</div></div>
-        <label style="display:flex;align-items:center;gap:6px;font-size:12px;cursor:pointer;white-space:nowrap"><input type="checkbox" data-rev="${r.i}" ${ok?"checked":""}> ${ok?"Reviewed":"Mark reviewed"}</label>
+        <div><h3 style="font-size:15px">${r.t}</h3><div class="meta"><span class="cat">${r.k}</span> · flagged ${fmt(r.d)}${ok?` · <span style="color:var(--green);font-weight:700">✓ filed to ${(REV_AREAS[r.a]||REV_AREAS.db).t}</span>`:""}</div></div>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+          ${ok?`<button class="btn" data-go="${r.i}">View in ${(REV_AREAS[r.a]||REV_AREAS.db).t} →</button>`:""}
+          <label style="display:flex;align-items:center;gap:6px;font-size:12px;cursor:pointer;white-space:nowrap"><input type="checkbox" data-rev="${r.i}" ${ok?"checked":""}> ${ok?"Reviewed":"Mark reviewed"}</label>
+        </div>
       </div>
-      <p><b>What's uncertain:</b> ${r.issue}</p>
-      <p style="margin-top:5px"><b>How to verify:</b> ${r.how}</p>
+      ${ok?"":`<p><b>What's uncertain:</b> ${r.issue}</p>
+      <p style="margin-top:5px"><b>How to verify:</b> ${r.how}</p>`}
     </div>`;
-  }).join("");
+  $("reviewList").innerHTML=
+    (openItems.map(r=>card(r,false)).join("")||`<div class="empty">Queue clear — every flagged item has been reviewed and filed to its section.</div>`)
+    +(filed.length?`<div style="margin:22px 0 10px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--hair);padding-top:14px">Reviewed &amp; filed — live in their sections, marked ✓ there (untick to reopen)</div>`+filed.map(r=>card(r,true)).join(""):"");
   document.querySelectorAll("[data-rev]").forEach(c=>c.onchange=()=>{
     let d=revStore.get();const id=+c.dataset.rev;
     d=c.checked?[...new Set([...d,id])]:d.filter(x=>x!==id);
-    revStore.set(d);renderReview();
+    revStore.set(d);renderReview();if(typeof renderTable==="function")renderTable();if(typeof renderCases==="function")renderCases();
   });
+  document.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>revGo(+b.dataset.go));
 }
 function renderFeeds(){
   $("feedList").innerHTML=FEEDS.map(f=>`<div class="feed"><div class="fdate">${fmt(f.d)}</div><h4>${f.t}</h4><p>${f.p}</p><span class="ftag ${f.tag}">${f.tag==="high"?"HIGH PRIORITY":f.tag==="med"?"MONITOR":"FYI"}</span></div>`).join("");
@@ -1086,6 +1106,10 @@ async function doSync(){
 $("syncBtn").onclick=doSync;
 syncIdleMsg();
 
+(function(){try{
+  const ds=[DB_DATE].concat(DATA.map(x=>x.lv||"")).concat(CASES.map(x=>x.lv||"")).filter(Boolean).sort();
+  const el=document.getElementById("dbDate"); if(el&&ds.length) el.textContent=fmt(ds[ds.length-1]);
+}catch(e){}})();
 renderFeeds();renderCases();renderReview();renderFoundations();renderAll();
 </script>
 </body>

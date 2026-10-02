@@ -1,61 +1,5 @@
 window.LAWS_DATA = [
  {
-  "id": 199,
-  "n": "DSA designation: ChatGPT (VLOSE); Reddit & Roblox (VLOPs)",
-  "j": "European Union",
-  "r": "eu-uk",
-  "c": "Platform Governance / Systemic Risk",
-  "d": "cross",
-  "s": "Enacted — phasing in",
-  "intro": "2026-08-31",
-  "eff": "2027-01-31",
-  "pra": false,
-  "ind": [
-   "Consumer tech",
-   "Social media",
-   "Gaming"
-  ],
-  "sum": "On 31 August 2026 the European Commission designated ChatGPT as a Very Large Online Search Engine and Reddit and Roblox as Very Large Online Platforms under the Digital Services Act, each having declared 45M+ average monthly EU users. The services have four months from notification — i.e. by January 2027 — to meet the additional VLOP/VLOSE duties: annual systemic-risk assessment and mitigation covering illegal content, negative effects on minors, users' physical and mental well-being, fundamental rights, electoral processes and public security, plus independent audits, data access for vetted researchers and an ad repository. First time a general-purpose AI assistant is regulated as a search engine.",
-  "src": "https://digital-strategy.ec.europa.eu/en/news/commission-designates-chatgpt-reddit-roblox-under-digital-services-act",
-  "auth": "European Commission (DG CNECT)",
-  "pen": "Up to 6% of global annual turnover (DSA Art. 74); periodic penalty payments; interim measures",
-  "obl": "Annual systemic-risk assessment and mitigation; independent audit; researcher data access; ad repository; crisis-response cooperation",
-  "cl": [
-   "L",
-   "A",
-   "R"
-  ],
-  "lv": "2026-09-03"
- },
- {
-  "id": 200,
-  "n": "California SB 1119 — Adam's Law (companion chatbots: children's safety)",
-  "j": "California",
-  "r": "us-state",
-  "c": "AI Companions / Children's Safety",
-  "d": "kids",
-  "s": "Passed chamber",
-  "intro": "",
-  "eff": "",
-  "pra": false,
-  "ind": [
-   "AI developers",
-   "Consumer tech",
-   "Social media"
-  ],
-  "sum": "Passed both chambers on 31 August 2026 (Sen. Padilla; principal coauthors Bauer-Kahan and Wicks) and sent to Governor Newsom; not yet signed. Would require companion-chatbot providers to determine user age, identify and address safety risks before making products available to minors, undergo independent audits, and protect 13-17-year-olds from self-harm content, sexually exploitative material and other high-risk interactions. Named for Adam Raine, whose parents' wrongful-death suit against OpenAI is on this tracker's docket. Part of a package of roughly 16 AI bills and 8 privacy bills cleared before the session deadline.",
-  "src": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1119",
-  "auth": "California Attorney General; private enforcement as enacted",
-  "pen": "Not yet verified — confirm against the enrolled text",
-  "obl": "Age determination; pre-deployment risk identification and mitigation for minors; independent audits; crisis-referral and harmful-content protections for 13-17s",
-  "cl": [
-   "C",
-   "L",
-   "A"
-  ],
-  "lv": "2026-09-03"
- },
- {
   "id": 1,
   "n": "TAKE IT DOWN Act",
   "j": "US Federal",
@@ -394,7 +338,8 @@ window.LAWS_DATA = [
   "obl": "Civil action for victims of sexually explicit deepfakes",
   "cl": [
    "L"
-  ]
+  ],
+  "lv": "2026-07-22"
  },
  {
   "id": 15,
@@ -978,10 +923,10 @@ window.LAWS_DATA = [
   "auth": "NY AG",
   "pen": "Up to $5,000 per violation",
   "obl": "Parental consent for addictive feeds; overnight notification limits (pending AG rules)",
-  "lv": "2026-07-22",
   "cl": [
    "R"
-  ]
+  ],
+  "lv": "2026-07-22"
  },
  {
   "id": 39,
@@ -1098,16 +1043,15 @@ window.LAWS_DATA = [
   ],
   "sum": "Signed May 27, 2026: frontier-model duties, AI-companion rules, automated employment decision requirements, content provenance; provisions phase in Oct 1, 2026 – Jan 1, 2028.",
   "src": "https://www.cga.ct.gov",
-  "lv": "2026-07-22",
-  "obl": "Phased: Oct 1 2026 — content provenance, AEDT anti-discrimination, subscription disclosures, AI-layoff WARN reporting; Jan 1 2027 — AI companion rules; Oct 1 2027 — automated employment-decision duties; Jan 1 2028 — social-media platform duties",
   "auth": "Connecticut AG",
   "pen": "CUTPA penalties (some cure/safe harbor)",
-  "obl": "Frontier-model protocols; AI-companion safeguards; AEDT notices; provenance tools",
+  "obl": "Phased: Oct 1 2026 — content provenance, AEDT anti-discrimination, subscription disclosures, AI-layoff WARN reporting; Jan 1 2027 — AI companion rules; Oct 1 2027 — automated employment-decision duties; Jan 1 2028 — social-media platform duties",
   "cl": [
    "C",
    "A",
    "R"
-  ]
+  ],
+  "lv": "2026-07-22"
  },
  {
   "id": 44,
@@ -1196,14 +1140,14 @@ window.LAWS_DATA = [
   ],
   "sum": "Signed June 2, 2026; effective Jan 1, 2027. Requires AI used in health-coverage utilization review to consider individual medical history (not solely generalised data) and human-clinician review of medical-necessity denials. Part of Colorado's three-front AI-in-healthcare framework with SB 24-205 and HB 26-1195.",
   "src": "https://leg.colorado.gov/bills/HB26-1139",
-  "lv": "2026-07-22",
   "auth": "Colorado DORA / AG",
   "pen": "Licensing discipline",
   "obl": "Disclosure and oversight for AI in healthcare decisions",
   "cl": [
    "C",
    "R"
-  ]
+  ],
+  "lv": "2026-07-22"
  },
  {
   "id": 48,
@@ -2665,6 +2609,7 @@ window.LAWS_DATA = [
  },
  {
   "id": 108,
+  "lv": "2026-10-02",
   "n": "Cyber Security and Resilience (NIS) Bill",
   "j": "United Kingdom",
   "r": "eu-uk",
@@ -2678,7 +2623,7 @@ window.LAWS_DATA = [
    "Critical infrastructure",
    "Managed service providers"
   ],
-  "sum": "Cleared the Commons June 2026; before the Lords (HL Bill 32) since Jun 17, 2026, Royal Assent expected late 2026. Pulls managed service providers, data centres and designated critical suppliers into a statutory regime.",
+  "sum": "Lords Grand Committee concluded Sep 15, 2026 (sat Sep 1–9); report stage next. Cleared the Commons Jun 16, 2026; Royal Assent now expected around the turn of 2027, commencement phased to 2028. Pulls managed service providers, data centres and designated critical suppliers into a statutory regime.",
   "src": "https://bills.parliament.uk/bills/4035",
   "auth": "Proposed: expanded NIS regulators",
   "pen": "Proposed: up to £17M or 4% of global turnover",
@@ -3988,7 +3933,8 @@ window.LAWS_DATA = [
    "C",
    "A",
    "R"
-  ]
+  ],
+  "lv": "2026-07-22"
  },
  {
   "id": 164,
@@ -4012,7 +3958,8 @@ window.LAWS_DATA = [
   "cl": [
    "L",
    "A"
-  ]
+  ],
+  "lv": "2026-07-22"
  },
  {
   "id": 165,
@@ -4035,7 +3982,8 @@ window.LAWS_DATA = [
   "src": "https://www.cas.go.jp",
   "cl": [
    "E"
-  ]
+  ],
+  "lv": "2026-07-22"
  },
  {
   "id": 166,
@@ -4058,7 +4006,8 @@ window.LAWS_DATA = [
   "src": "https://www.ppc.go.jp",
   "cl": [
    "L"
-  ]
+  ],
+  "lv": "2026-07-22"
  },
  {
   "id": 167,
@@ -4230,7 +4179,8 @@ window.LAWS_DATA = [
   "cl": [
    "A",
    "R"
-  ]
+  ],
+  "lv": "2026-07-22"
  },
  {
   "id": 174,
@@ -4254,7 +4204,8 @@ window.LAWS_DATA = [
   "src": "https://www.cac.gov.cn",
   "cl": [
    "C"
-  ]
+  ],
+  "lv": "2026-07-22"
  },
  {
   "id": 175,
@@ -4278,7 +4229,8 @@ window.LAWS_DATA = [
   "cl": [
    "L",
    "A"
-  ]
+  ],
+  "lv": "2026-07-22"
  },
  {
   "id": 176,
@@ -4302,7 +4254,8 @@ window.LAWS_DATA = [
   "cl": [
    "L",
    "A"
-  ]
+  ],
+  "lv": "2026-07-22"
  },
  {
   "id": 177,
@@ -4399,24 +4352,506 @@ window.LAWS_DATA = [
   "cl": [
    "E",
    "A"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 181,
+  "n": "Children's Wellbeing and Schools Act 2026",
+  "j": "United Kingdom",
+  "r": "eu-uk",
+  "c": "Social Media & Minors",
+  "d": "kids",
+  "s": "Enacted — phasing in",
+  "intro": "2024-12-17",
+  "eff": "2026-04-29",
+  "pra": false,
+  "ind": [
+   "Education",
+   "Social media"
+  ],
+  "auth": "DfE / Ofcom (relevant provisions)",
+  "pen": "Provision-specific",
+  "obl": "Children's-safety and schools measures incl. online-safety-adjacent duties; commencement phased by regulations",
+  "sum": "Royal Assent Apr 29, 2026, the same day as the Crime and Policing Act — the two pillars of the UK's fast-tracked children's-safety package.",
+  "src": "https://bills.parliament.uk",
+  "cl": [
+   "R"
   ]
  },
- {"id":181,"n":"Children's Wellbeing and Schools Act 2026","j":"United Kingdom","r":"eu-uk","c":"Social Media & Minors","d":"kids","s":"Enacted — phasing in","intro":"2024-12-17","eff":"2026-04-29","pra":false,"ind":["Education","Social media"],"auth":"DfE / Ofcom (relevant provisions)","pen":"Provision-specific","obl":"Children's-safety and schools measures incl. online-safety-adjacent duties; commencement phased by regulations","sum":"Royal Assent Apr 29, 2026, the same day as the Crime and Policing Act — the two pillars of the UK's fast-tracked children's-safety package.","src":"https://bills.parliament.uk","cl":["R"]},
- {"id":182,"n":"UK Under-16 Social Media Ban (announced)","j":"United Kingdom","r":"eu-uk","c":"Social Media & Minors","d":"kids","s":"Proposed","intro":"2026-07-15","eff":null,"pra":false,"ind":["Social media"],"auth":"Ofcom (expected)","pen":"TBC — OSA-level fines expected","obl":"Australia-model under-16 account ban going further: livestreaming and stranger-contact functions blocked for under-16s; default midnight–6am curfews for 16–17s (announced Jul 15, 2026)","sum":"Government-announced under-16 social media ban on the Australian model, plus overnight curfews for 16–17-year-olds; legislative vehicle and commencement dates still to be confirmed.","src":"https://commonslibrary.parliament.uk/research-briefings/cbp-10468/","cl":["R"]},
- {"id":183,"n":"UK Digital ID Bill (Digital Access to Services)","j":"United Kingdom","r":"eu-uk","c":"Age Verification","d":"cross","s":"Proposed","intro":"2026-05-13","eff":null,"pra":false,"ind":["Government","Consumer tech"],"auth":"Proposed: DSIT / OfDIA","pen":"TBC","obl":"Statutory framework for government digital ID — designed to be useful, inclusive and trusted (Mar 2026 consultation); potential age-assurance backbone","sum":"Confirmed in the King's Speech May 13, 2026: relaunches the government digital-ID push — a privacy flashpoint and possible infrastructure for age assurance.","src":"https://commonslibrary.parliament.uk/research-briefings/cbp-10369/","cl":["E","R"]},
- {"id":184,"n":"Protection of Children (Digital Safety and Data Protection) Bill","j":"United Kingdom","r":"eu-uk","c":"Social Media & Minors","d":"kids","s":"In committee","intro":"2024-10-16","eff":null,"pra":false,"ind":["Social media"],"auth":"Proposed","pen":"TBC","obl":"Would raise the digital age of consent and add child-safety duties","sum":"Private member's bill kept alive through the 2025–26 session as a pressure vehicle for a higher digital age of consent — now partly overtaken by the government's announced under-16 ban.","src":"https://bills.parliament.uk/bills/3778","cl":["R"]},
- {"id":185,"n":"CTU Caribbean AI Task Force / CARICOM AI governance","j":"CARICOM (Caribbean)","r":"caribbean","c":"AI Strategy / Framework","d":"ai","s":"Proposed","intro":"2025-07-18","eff":null,"pra":false,"ind":["Government","All sectors"],"auth":"Caribbean Telecommunications Union (CTU)","pen":"N/A (policy framework)","obl":"Harmonise AI policy and regulatory frameworks across Caribbean states; data-sovereignty and inclusive-development principles","sum":"Launched Jul 18, 2025 to harmonise AI governance across the region, building on the 2021 UNESCO–CARICOM AI Policy Roadmap; a consolidated policy report is due at the Caribbean AI Forum in 2026 — the region's first coordinated AI-governance floor.","src":"https://www.ctu.int","cl":["E","A"],"lv":"2026-07-22"},
- {"id":186,"n":"Jamaica Data Protection Act 2020","j":"Jamaica","r":"caribbean","c":"National DP Law","d":"privacy","s":"Enacted — phasing in","intro":"2020-06-30","eff":"2023-12-01","pra":false,"ind":["All sectors"],"auth":"Office of the Information Commissioner (OIC)","pen":"Fines and imprisonment; breach-notification duties","obl":"Eight data-protection standards, controller registration (opened Jun 1 2024), DPO, breach reporting — operative since Dec 1 2023, though enforcement powers are not yet fully commenced","sum":"Jamaica's GDPR-modelled DP law: operative provisions in force since Dec 1, 2023 after a three-year transition; controller registration opened Jun 2024. Enforcement mechanisms are still being switched on.","src":"https://laws.moj.gov.jm","cl":["L","A"],"lv":"2026-07-22"},
- {"id":187,"n":"Bermuda Personal Information Protection Act 2016 (PIPA)","j":"Bermuda","r":"caribbean","c":"National DP Law","d":"privacy","s":"In effect","intro":"2016-07-27","eff":"2025-01-01","pra":false,"ind":["All sectors"],"auth":"Office of the Privacy Commissioner (PrivCom)","pen":"Up to BMD 250,000; criminal penalties","obl":"Fair-processing conditions, privacy officer, breach notification, transfer controls; PrivCom shifting from education to enforcement","sum":"Bermuda's GDPR-comparable privacy law came into full force Jan 1, 2025; the Privacy Commissioner has signalled a move to active enforcement.","src":"https://www.privacy.bm","cl":["L","A"],"lv":"2026-07-22"},
- {"id":188,"n":"Cayman Islands Data Protection Act (2021 Revision)","j":"Cayman Islands","r":"caribbean","c":"National DP Law","d":"privacy","s":"In effect","intro":"2017-03-27","eff":"2019-09-30","pra":false,"ind":["All sectors","Financial services"],"auth":"Office of the Ombudsman","pen":"Up to KYD 250,000; criminal liability","obl":"Eight data-protection principles; controller/processor duties; breach notification; extraterritorial reach","sum":"In force since Sep 30, 2019; the first DP framework in the Cayman Islands, closely aligned with the GDPR and central to its financial-services sector.","src":"https://ombudsman.ky/data-protection","cl":["L","A"],"lv":"2026-07-22"},
- {"id":189,"n":"Barbados Data Protection Act 2019","j":"Barbados","r":"caribbean","c":"National DP Law","d":"privacy","s":"In effect","intro":"2019-07-01","eff":"2021-03-01","pra":false,"ind":["All sectors"],"auth":"Data Protection Commissioner","pen":"Fines and imprisonment","obl":"GDPR-modelled processing conditions, registration, subject rights, transfer rules","sum":"Came into effect March 2021; a GDPR-aligned framework with a dedicated Data Protection Commissioner.","src":"https://www.barbadosparliament.com","cl":["L","A"],"lv":"2026-07-22"},
- {"id":190,"n":"Trinidad & Tobago Data Protection Act 2011","j":"Trinidad and Tobago","r":"caribbean","c":"National DP Law","d":"privacy","s":"Enacted — phasing in","intro":"2011-06-06","eff":"2012-01-06","pra":false,"ind":["All sectors"],"auth":"Office of the Information Commissioner","pen":"Fines and imprisonment (on full proclamation)","obl":"General privacy principles in force; the substantive controller obligations await full proclamation","sum":"Only the general provisions have been proclaimed; the operative controller obligations remain to be brought fully into force — a long-running implementation gap.","src":"https://rgd.legalaffairs.gov.tt","cl":["L"],"lv":"2026-07-22"},
- {"id":191,"n":"Bahamas Data Protection Bill 2025 (draft)","j":"Bahamas","r":"caribbean","c":"National DP Law","d":"privacy","s":"Proposed","intro":"2025-08-01","eff":null,"pra":false,"ind":["All sectors"],"auth":"Office of the Data Protection Commissioner","pen":"TBC (GDPR-style tiers proposed)","obl":"Would repeal and replace the 2003 Act with a GDPR-modelled framework aligned to Jamaica, Cayman and Bermuda","sum":"Public consultation launched Aug 2025 on a draft Bill to modernise the Bahamas' 2003 data-protection regime — a bellwether for the current Caribbean reform wave.","src":"https://www.bahamas.gov.bs","cl":["L"],"lv":"2026-07-22"},
- {"id":192,"n":"Dominican Republic Law 172-13 (Personal Data Protection)","j":"Dominican Republic","r":"caribbean","c":"National DP Law","d":"privacy","s":"In effect","intro":"2013-12-13","eff":"2013-12-13","pra":false,"ind":["All sectors"],"auth":"Superintendency of Banks (credit data) / sectoral","pen":"Fines and criminal penalties","obl":"Consent-based processing, habeas data rights; a modernised GDPR-aligned reform bill has been under discussion","sum":"One of the region's older DP laws (2013), focused on credit data; a comprehensive GDPR-style reform has been in the legislative pipeline.","src":"https://www.sib.gob.do","cl":["L"],"lv":"2026-07-22"},
- {"id":193,"n":"Thailand PDPA (Personal Data Protection Act)","j":"Thailand","r":"asia","c":"National DP Law","d":"privacy","s":"In effect","intro":"2019-05-27","eff":"2022-06-01","pra":false,"ind":["All sectors"],"auth":"PDPC Thailand","pen":"Up to THB 5M + criminal/punitive damages","obl":"Consent-based processing, DPO, breach notification within 72h, automated-processing notice; ASEAN's early comprehensive law","sum":"Southeast Asia's leading comprehensive privacy law, fully enforced since Jun 1, 2022; AI-specific transparency remains guidance-based.","src":"https://www.pdpc.or.th","cl":["L","A"],"lv":"2026-07-22"},
- {"id":194,"n":"Indonesia PDP Law (UU PDP, Law 27/2022)","j":"Indonesia","r":"asia","c":"National DP Law","d":"privacy","s":"In effect","intro":"2022-09-20","eff":"2024-10-17","pra":false,"ind":["All sectors"],"auth":"PDP Agency (forming under MOCI)","pen":"Up to 2% of annual revenue; criminal penalties","obl":"GDPR-style consent, DPO for high-risk processing, breach notice; AI-specific rules under development","sum":"Comprehensive GDPR-modelled law; transition period ended Oct 17, 2024, with the dedicated PDP Agency still being stood up.","src":"https://www.komdigi.go.id","cl":["L","A"],"lv":"2026-07-22"},
- {"id":195,"n":"Vietnam Personal Data Protection Law (PDPL)","j":"Vietnam","r":"asia","c":"National DP Law","d":"privacy","s":"Enacted — phasing in","intro":"2025-05-01","eff":"2026-01-01","pra":false,"ind":["All sectors"],"auth":"Ministry of Public Security (A05)","pen":"Turnover-based fines; data-localisation triggers","obl":"Consent, impact assessments, restrictions on cross-border transfer of 'core'/'important' data (terms still being defined)","sum":"Vietnam's first comprehensive PDP statute, effective Jan 1, 2026, replacing Decree 13/2023 — with contested data-localisation and transfer rules.","src":"https://vanban.chinhphu.vn","cl":["L","R"],"lv":"2026-07-22"},
- {"id":196,"n":"Malaysia PDPA (as amended 2024)","j":"Malaysia","r":"asia","c":"National DP Law","d":"privacy","s":"Enacted — phasing in","intro":"2010-06-10","eff":"2025-06-01","pra":false,"ind":["All sectors"],"auth":"Personal Data Protection Department (JPDP)","pen":"Fines + imprisonment (raised by 2024 amendments)","obl":"2024 amendments add breach notification, mandatory DPO, and data-portability — phasing in through 2025–26","sum":"Malaysia's 2024 amendments modernise the 2010 PDPA toward GDPR norms, with new breach-notification and DPO duties commencing in stages.","src":"https://www.pdp.gov.my","cl":["L","A"],"lv":"2026-07-22"},
- {"id":197,"n":"Philippines Data Privacy Act (RA 10173)","j":"Philippines","r":"asia","c":"National DP Law","d":"privacy","s":"In effect","intro":"2012-08-15","eff":"2016-09-09","pra":false,"ind":["All sectors"],"auth":"National Privacy Commission (NPC)","pen":"Fines + imprisonment; NPC administrative fines (2022 circular)","obl":"Consent, DPO, breach notification, registration of data-processing systems","sum":"Long-standing GDPR-adjacent law with an active regulator; the NPC has issued AI and automated-decision guidance.","src":"https://www.privacy.gov.ph","cl":["L","A"],"lv":"2026-07-22"},
- {"id":198,"n":"Singapore PDPA (Personal Data Protection Act)","j":"Singapore","r":"asia","c":"National DP Law","d":"privacy","s":"In effect","intro":"2012-10-15","eff":"2014-07-02","pra":true,"ind":["All sectors"],"auth":"PDPC Singapore","pen":"Up to 10% of annual turnover or SGD 1M","obl":"Consent, purpose limitation, breach notification, data portability; limited private right of action","sum":"ASEAN's benchmark privacy law; further GDPR-parity amendments expected. Pairs with Singapore's Model AI Governance Framework.","src":"https://www.pdpc.gov.sg","cl":["L","A"],"lv":"2026-07-22"}
+ {
+  "id": 182,
+  "n": "UK Under-16 Social Media Ban (announced)",
+  "j": "United Kingdom",
+  "r": "eu-uk",
+  "c": "Social Media & Minors",
+  "d": "kids",
+  "s": "Proposed",
+  "intro": "2026-07-15",
+  "eff": null,
+  "pra": false,
+  "ind": [
+   "Social media"
+  ],
+  "auth": "Ofcom (expected)",
+  "pen": "TBC — OSA-level fines expected",
+  "obl": "Australia-model under-16 account ban going further: livestreaming and stranger-contact functions blocked for under-16s; default midnight–6am curfews for 16–17s",
+  "sum": "Vehicle now confirmed: s.70 of the Children’s Wellbeing and Schools Act 2026 inserts s.214A into the Online Safety Act, requiring regulations restricting under-16 social media use. Government aims to lay the regulations by end-2026, with the ban effective from spring 2027; ban announced Jun 15, 2026, curfew policy Jul 15, 2026.",
+  "lv": "2026-10-02",
+  "src": "https://commonslibrary.parliament.uk/research-briefings/cbp-10468/",
+  "cl": [
+   "R"
+  ]
+ },
+ {
+  "id": 199,
+  "lv": "2026-10-02",
+  "n": "California SB 813 (AI Verification Organizations)",
+  "j": "US — California",
+  "r": "us-state",
+  "c": "AI Assurance / Certification",
+  "d": "ai",
+  "s": "Passed into law",
+  "intro": null,
+  "eff": null,
+  "pra": false,
+  "ind": [
+   "Frontier AI developers",
+   "Consumer tech"
+  ],
+  "sum": "Signed Sep 9, 2026 — first state framework for certifying independent verification organizations to assess AI systems and models for safety and risk, creating a third-party AI assurance ecosystem. Implementation details and effective dates pending; flagged for verification.",
+  "src": "https://www.gov.ca.gov",
+  "auth": "California (framework; AG enforcement expected)",
+  "pen": "TBC",
+  "obl": "Certification framework for independent AI verification organizations",
+  "cl": [
+   "A",
+   "R"
+  ]
+ },
+ {
+  "id": 200,
+  "lv": "2026-10-02",
+  "n": "California AI Chatbot & Child Safety Package (Sept 2026)",
+  "j": "US — California",
+  "r": "us-state",
+  "c": "AI Chatbots & Minors",
+  "d": "kids",
+  "s": "Passed into law",
+  "intro": null,
+  "eff": null,
+  "pra": false,
+  "ind": [
+   "Consumer tech",
+   "Social media",
+   "Frontier AI developers"
+  ],
+  "sum": "Signed Sep 10–16, 2026: risk assessments required before new chatbot rollouts, penalties up to $1M per child for harm, plus worker-protection and AI-advertising disclosure measures; companion executive order (Sep 18) directs independent oversight and an AI kill-switch capability. Bill numbers and effective dates flagged for verification.",
+  "src": "https://www.gov.ca.gov/2026/09/16/governor-newsom-signs-new-law-to-protect-workers-require-disclosures-on-ai-generated-advertising/",
+  "auth": "California AG / agencies TBC",
+  "pen": "Up to $1,000,000 per child harmed (chatbot harms)",
+  "obl": "Pre-rollout chatbot risk assessments; child-harm penalties; AI-ad disclosure; worker protections",
+  "cl": [
+   "L",
+   "R",
+   "A"
+  ]
+ },
+ {
+  "id": 183,
+  "n": "UK Digital ID Bill (Digital Access to Services)",
+  "j": "United Kingdom",
+  "r": "eu-uk",
+  "c": "Age Verification",
+  "d": "cross",
+  "s": "Proposed",
+  "intro": "2026-05-13",
+  "eff": null,
+  "pra": false,
+  "ind": [
+   "Government",
+   "Consumer tech"
+  ],
+  "auth": "Proposed: DSIT / OfDIA",
+  "pen": "TBC",
+  "obl": "Statutory framework for government digital ID — designed to be useful, inclusive and trusted (Mar 2026 consultation); potential age-assurance backbone",
+  "sum": "Confirmed in the King's Speech May 13, 2026: relaunches the government digital-ID push — a privacy flashpoint and possible infrastructure for age assurance.",
+  "src": "https://commonslibrary.parliament.uk/research-briefings/cbp-10369/",
+  "cl": [
+   "E",
+   "R"
+  ]
+ },
+ {
+  "id": 184,
+  "n": "Protection of Children (Digital Safety and Data Protection) Bill",
+  "j": "United Kingdom",
+  "r": "eu-uk",
+  "c": "Social Media & Minors",
+  "d": "kids",
+  "s": "In committee",
+  "intro": "2024-10-16",
+  "eff": null,
+  "pra": false,
+  "ind": [
+   "Social media"
+  ],
+  "auth": "Proposed",
+  "pen": "TBC",
+  "obl": "Would raise the digital age of consent and add child-safety duties",
+  "sum": "Private member's bill kept alive through the 2025–26 session as a pressure vehicle for a higher digital age of consent — now partly overtaken by the government's announced under-16 ban.",
+  "src": "https://bills.parliament.uk/bills/3778",
+  "cl": [
+   "R"
+  ]
+ },
+ {
+  "id": 185,
+  "n": "CTU Caribbean AI Task Force / CARICOM AI governance",
+  "j": "CARICOM (Caribbean)",
+  "r": "caribbean",
+  "c": "AI Strategy / Framework",
+  "d": "ai",
+  "s": "Proposed",
+  "intro": "2025-07-18",
+  "eff": null,
+  "pra": false,
+  "ind": [
+   "Government",
+   "All sectors"
+  ],
+  "auth": "Caribbean Telecommunications Union (CTU)",
+  "pen": "N/A (policy framework)",
+  "obl": "Harmonise AI policy and regulatory frameworks across Caribbean states; data-sovereignty and inclusive-development principles",
+  "sum": "Launched Jul 18, 2025 to harmonise AI governance across the region, building on the 2021 UNESCO–CARICOM AI Policy Roadmap; a consolidated policy report is due at the Caribbean AI Forum in 2026 — the region's first coordinated AI-governance floor.",
+  "src": "https://www.ctu.int",
+  "cl": [
+   "E",
+   "A"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 186,
+  "n": "Jamaica Data Protection Act 2020",
+  "j": "Jamaica",
+  "r": "caribbean",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "Enacted — phasing in",
+  "intro": "2020-06-30",
+  "eff": "2023-12-01",
+  "pra": false,
+  "ind": [
+   "All sectors"
+  ],
+  "auth": "Office of the Information Commissioner (OIC)",
+  "pen": "Fines and imprisonment; breach-notification duties",
+  "obl": "Eight data-protection standards, controller registration (opened Jun 1 2024), DPO, breach reporting — operative since Dec 1 2023, though enforcement powers are not yet fully commenced",
+  "sum": "Jamaica's GDPR-modelled DP law: operative provisions in force since Dec 1, 2023 after a three-year transition; controller registration opened Jun 2024. Enforcement mechanisms are still being switched on.",
+  "src": "https://laws.moj.gov.jm",
+  "cl": [
+   "L",
+   "A"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 187,
+  "n": "Bermuda Personal Information Protection Act 2016 (PIPA)",
+  "j": "Bermuda",
+  "r": "caribbean",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "In effect",
+  "intro": "2016-07-27",
+  "eff": "2025-01-01",
+  "pra": false,
+  "ind": [
+   "All sectors"
+  ],
+  "auth": "Office of the Privacy Commissioner (PrivCom)",
+  "pen": "Up to BMD 250,000; criminal penalties",
+  "obl": "Fair-processing conditions, privacy officer, breach notification, transfer controls; PrivCom shifting from education to enforcement",
+  "sum": "Bermuda's GDPR-comparable privacy law came into full force Jan 1, 2025; the Privacy Commissioner has signalled a move to active enforcement.",
+  "src": "https://www.privacy.bm",
+  "cl": [
+   "L",
+   "A"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 188,
+  "n": "Cayman Islands Data Protection Act (2021 Revision)",
+  "j": "Cayman Islands",
+  "r": "caribbean",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "In effect",
+  "intro": "2017-03-27",
+  "eff": "2019-09-30",
+  "pra": false,
+  "ind": [
+   "All sectors",
+   "Financial services"
+  ],
+  "auth": "Office of the Ombudsman",
+  "pen": "Up to KYD 250,000; criminal liability",
+  "obl": "Eight data-protection principles; controller/processor duties; breach notification; extraterritorial reach",
+  "sum": "In force since Sep 30, 2019; the first DP framework in the Cayman Islands, closely aligned with the GDPR and central to its financial-services sector.",
+  "src": "https://ombudsman.ky/data-protection",
+  "cl": [
+   "L",
+   "A"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 189,
+  "n": "Barbados Data Protection Act 2019",
+  "j": "Barbados",
+  "r": "caribbean",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "In effect",
+  "intro": "2019-07-01",
+  "eff": "2021-03-01",
+  "pra": false,
+  "ind": [
+   "All sectors"
+  ],
+  "auth": "Data Protection Commissioner",
+  "pen": "Fines and imprisonment",
+  "obl": "GDPR-modelled processing conditions, registration, subject rights, transfer rules",
+  "sum": "Came into effect March 2021; a GDPR-aligned framework with a dedicated Data Protection Commissioner.",
+  "src": "https://www.barbadosparliament.com",
+  "cl": [
+   "L",
+   "A"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 190,
+  "n": "Trinidad & Tobago Data Protection Act 2011",
+  "j": "Trinidad and Tobago",
+  "r": "caribbean",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "Enacted — phasing in",
+  "intro": "2011-06-06",
+  "eff": "2012-01-06",
+  "pra": false,
+  "ind": [
+   "All sectors"
+  ],
+  "auth": "Office of the Information Commissioner",
+  "pen": "Fines and imprisonment (on full proclamation)",
+  "obl": "General privacy principles in force; the substantive controller obligations await full proclamation",
+  "sum": "Only the general provisions have been proclaimed; the operative controller obligations remain to be brought fully into force — a long-running implementation gap.",
+  "src": "https://rgd.legalaffairs.gov.tt",
+  "cl": [
+   "L"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 191,
+  "n": "Bahamas Data Protection Bill 2025 (draft)",
+  "j": "Bahamas",
+  "r": "caribbean",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "Proposed",
+  "intro": "2025-08-01",
+  "eff": null,
+  "pra": false,
+  "ind": [
+   "All sectors"
+  ],
+  "auth": "Office of the Data Protection Commissioner",
+  "pen": "TBC (GDPR-style tiers proposed)",
+  "obl": "Would repeal and replace the 2003 Act with a GDPR-modelled framework aligned to Jamaica, Cayman and Bermuda",
+  "sum": "Public consultation launched Aug 2025 on a draft Bill to modernise the Bahamas' 2003 data-protection regime — a bellwether for the current Caribbean reform wave.",
+  "src": "https://www.bahamas.gov.bs",
+  "cl": [
+   "L"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 192,
+  "n": "Dominican Republic Law 172-13 (Personal Data Protection)",
+  "j": "Dominican Republic",
+  "r": "caribbean",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "In effect",
+  "intro": "2013-12-13",
+  "eff": "2013-12-13",
+  "pra": false,
+  "ind": [
+   "All sectors"
+  ],
+  "auth": "Superintendency of Banks (credit data) / sectoral",
+  "pen": "Fines and criminal penalties",
+  "obl": "Consent-based processing, habeas data rights; a modernised GDPR-aligned reform bill has been under discussion",
+  "sum": "One of the region's older DP laws (2013), focused on credit data; a comprehensive GDPR-style reform has been in the legislative pipeline.",
+  "src": "https://www.sib.gob.do",
+  "cl": [
+   "L"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 193,
+  "n": "Thailand PDPA (Personal Data Protection Act)",
+  "j": "Thailand",
+  "r": "asia",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "In effect",
+  "intro": "2019-05-27",
+  "eff": "2022-06-01",
+  "pra": false,
+  "ind": [
+   "All sectors"
+  ],
+  "auth": "PDPC Thailand",
+  "pen": "Up to THB 5M + criminal/punitive damages",
+  "obl": "Consent-based processing, DPO, breach notification within 72h, automated-processing notice; ASEAN's early comprehensive law",
+  "sum": "Southeast Asia's leading comprehensive privacy law, fully enforced since Jun 1, 2022; AI-specific transparency remains guidance-based.",
+  "src": "https://www.pdpc.or.th",
+  "cl": [
+   "L",
+   "A"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 194,
+  "n": "Indonesia PDP Law (UU PDP, Law 27/2022)",
+  "j": "Indonesia",
+  "r": "asia",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "In effect",
+  "intro": "2022-09-20",
+  "eff": "2024-10-17",
+  "pra": false,
+  "ind": [
+   "All sectors"
+  ],
+  "auth": "PDP Agency (forming under MOCI)",
+  "pen": "Up to 2% of annual revenue; criminal penalties",
+  "obl": "GDPR-style consent, DPO for high-risk processing, breach notice; AI-specific rules under development",
+  "sum": "Comprehensive GDPR-modelled law; transition period ended Oct 17, 2024, with the dedicated PDP Agency still being stood up.",
+  "src": "https://www.komdigi.go.id",
+  "cl": [
+   "L",
+   "A"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 195,
+  "n": "Vietnam Personal Data Protection Law (PDPL)",
+  "j": "Vietnam",
+  "r": "asia",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "Enacted — phasing in",
+  "intro": "2025-05-01",
+  "eff": "2026-01-01",
+  "pra": false,
+  "ind": [
+   "All sectors"
+  ],
+  "auth": "Ministry of Public Security (A05)",
+  "pen": "Turnover-based fines; data-localisation triggers",
+  "obl": "Consent, impact assessments, restrictions on cross-border transfer of 'core'/'important' data (terms still being defined)",
+  "sum": "Vietnam's first comprehensive PDP statute, effective Jan 1, 2026, replacing Decree 13/2023 — with contested data-localisation and transfer rules.",
+  "src": "https://vanban.chinhphu.vn",
+  "cl": [
+   "L",
+   "R"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 196,
+  "n": "Malaysia PDPA (as amended 2024)",
+  "j": "Malaysia",
+  "r": "asia",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "Enacted — phasing in",
+  "intro": "2010-06-10",
+  "eff": "2025-06-01",
+  "pra": false,
+  "ind": [
+   "All sectors"
+  ],
+  "auth": "Personal Data Protection Department (JPDP)",
+  "pen": "Fines + imprisonment (raised by 2024 amendments)",
+  "obl": "2024 amendments add breach notification, mandatory DPO, and data-portability — phasing in through 2025–26",
+  "sum": "Malaysia's 2024 amendments modernise the 2010 PDPA toward GDPR norms, with new breach-notification and DPO duties commencing in stages.",
+  "src": "https://www.pdp.gov.my",
+  "cl": [
+   "L",
+   "A"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 197,
+  "n": "Philippines Data Privacy Act (RA 10173)",
+  "j": "Philippines",
+  "r": "asia",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "In effect",
+  "intro": "2012-08-15",
+  "eff": "2016-09-09",
+  "pra": false,
+  "ind": [
+   "All sectors"
+  ],
+  "auth": "National Privacy Commission (NPC)",
+  "pen": "Fines + imprisonment; NPC administrative fines (2022 circular)",
+  "obl": "Consent, DPO, breach notification, registration of data-processing systems",
+  "sum": "Long-standing GDPR-adjacent law with an active regulator; the NPC has issued AI and automated-decision guidance.",
+  "src": "https://www.privacy.gov.ph",
+  "cl": [
+   "L",
+   "A"
+  ],
+  "lv": "2026-07-22"
+ },
+ {
+  "id": 198,
+  "n": "Singapore PDPA (Personal Data Protection Act)",
+  "j": "Singapore",
+  "r": "asia",
+  "c": "National DP Law",
+  "d": "privacy",
+  "s": "In effect",
+  "intro": "2012-10-15",
+  "eff": "2014-07-02",
+  "pra": true,
+  "ind": [
+   "All sectors"
+  ],
+  "auth": "PDPC Singapore",
+  "pen": "Up to 10% of annual turnover or SGD 1M",
+  "obl": "Consent, purpose limitation, breach notification, data portability; limited private right of action",
+  "sum": "ASEAN's benchmark privacy law; further GDPR-parity amendments expected. Pairs with Singapore's Model AI Governance Framework.",
+  "src": "https://www.pdpc.gov.sg",
+  "cl": [
+   "L",
+   "A"
+  ],
+  "lv": "2026-07-22"
+ }
 ];
