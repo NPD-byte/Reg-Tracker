@@ -7,14 +7,14 @@ window.CASES_DATA = [
   "ar": "Copyright / Training data",
   "st": "Settled",
   "fd": "2024-08-19",
-  "nx": "Claims administration under way; first payouts expected around Nov 15, 2026 (reported base rate ~$2,203.56 per work, subject to a 30-day contest window)",
-  "sum": "Authors' class action over pirated books used in training. Judge Alsup's June 2025 ruling: training on lawfully acquired books = fair use, but building a 'central library' of pirated copies is not. Settled for $1.5B (~482,000 works, ~$3,113/book) — the largest US copyright settlement ever; final approval Jul 20, 2026.",
+  "nx": "First distribution (~70% of each work's award) expected week of Nov 23, 2026",
+  "sum": "Authors' class action over pirated books used in training. Judge Alsup's June 2025 ruling: training on lawfully acquired books = fair use, but building a 'central library' of pirated copies is not. Settled for $1.5B (~482,000 works, ~$3,113/book) — the largest US copyright settlement ever; final approval Jul 20, 2026. Payment-summary notices went out Nov 13, 2026 (dispute deadline Nov 20); first payments slipped from the Nov 15 target to the week of Nov 23. Opt-out author Daniel Gilbert and Anthropic filed a joint stipulation of facts on LibGen use and book scanning (Nov 19).",
   "why": "Sets the economic baseline for training-data liability and the acquire-lawfully-or-pay rule. The fair-use/piracy split is now the reference point for every AI copyright negotiation.",
   "src": "https://www.courtlistener.com/docket/69058235/bartz-v-anthropic-pbc/",
   "cl": [
    "L"
   ],
-  "lv": "2026-09-21"
+  "lv": "2026-11-22"
  },
  {
   "id": 2,
@@ -24,15 +24,15 @@ window.CASES_DATA = [
   "ar": "Copyright / Training data",
   "st": "Active",
   "fd": "2023-10-18",
-  "nx": "Summary judgment hearing Oct 21, 2026 — expect Thomson Reuters v. Ross to be cited as supplemental authority",
-  "sum": "Music publishers over song lyrics in training and outputs. Jan 2025 stipulation locked in Claude's output guardrails; preliminary injunction on training use denied Mar 2025. Cross-SJ motions on infringement vs. fair use set for Oct 21, 2026; a second 2026 case is subject to a stay motion. Heard by Judge Lee with a related music cluster (Concord II, BMG, Sony, Round Hill); Concord dropped its secondary-liability claims in April 2026, prompting a short coordination stay.",
+  "nx": "Concord I fair-use SJ ruling pending (argued Oct 21, 2026); Concord II amended complaint per Nov 17 schedule",
+  "sum": "Music publishers over song lyrics in training and outputs. Jan 2025 stipulation locked in Claude's output guardrails; preliminary injunction on training use denied Mar 2025. Cross-SJ motions on infringement vs. fair use set for Oct 21, 2026; a second 2026 case is subject to a stay motion. Heard by Judge Lee with a related music cluster (Concord II, BMG, Sony, Round Hill); Concord dropped its secondary-liability claims in April 2026, prompting a short coordination stay. Oct 21, 2026: Judge Lee heard the fair-use cross-motions, focusing on market harm to publishers and whether the case should go to trial; no ruling reported by Nov 22. Concord II (Nov 4): the direct-infringement claim against CEO Dario Amodei was dismissed with leave to amend; the torrenting claims against Anthropic and Benjamin Mann proceed, and Anthropic's motion on output and DMCA §1202 claims was tentatively denied pending more briefing.",
   "why": "The first major test of fair use for lyrics post-Bartz — and the guardrails stipulation is a template for output-side settlements.",
   "src": "https://www.courtlistener.com/docket/68889092/concord-music-group-inc-v-anthropic-pbc/",
   "cl": [
    "L",
    "C"
   ],
-  "lv": "2026-09-21"
+  "lv": "2026-11-22"
  },
  {
   "id": 3,
@@ -58,14 +58,14 @@ window.CASES_DATA = [
   "ar": "Copyright / Training data",
   "st": "Active",
   "fd": "2023-12-27",
-  "nx": "Cross-motions for summary judgment on fair use filed Sep 4, 2026 — the main event; Times Publishing (26 local outlets, Sep 16) and Vredenburgh v. OpenAI (chat-log human review, Sep 16) seek coordination",
-  "sum": "The flagship AI copyright fight. Judge Stein largely sustained NYT's direct claims (Apr 2025) and ordered OpenAI to produce 20M anonymised ChatGPT logs (objection denied Jul 2026). On Jun 25, 2026 the NYT amended, dropping its contributory-infringement claim against OpenAI and concentrating secondary liability on Microsoft. Aug 2026 brought a wave of new training-data suits (textbook authors, WikiHow) into the OpenAI docket.",
+  "nx": "Fair-use SJ replies filed ~Nov 20–21, 2026; news plaintiffs' output/RAG theories not yet briefed; argument to follow",
+  "sum": "The flagship AI copyright fight. Judge Stein largely sustained NYT's direct claims (Apr 2025) and ordered OpenAI to produce 20M anonymised ChatGPT logs (objection denied Jul 2026). On Jun 25, 2026 the NYT amended, dropping its contributory-infringement claim against OpenAI and concentrating secondary liability on Microsoft. Aug 2026 brought a wave of new training-data suits (textbook authors, WikiHow) into the OpenAI docket. Oct 23, 2026: oppositions to the fair-use cross-motions filed; replies followed around Nov 20–21. New newspaper suits joined or flagged as related (USA Today Co., Oct 8; Emmerich Newspapers, Nov 6).",
   "why": "Whatever fair-use ruling emerges here will be the one the Second Circuit — and likely SCOTUS — reviews. The discovery orders are also defining AI-era privilege and user-privacy norms.",
   "src": "https://www.courtlistener.com/docket/68117049/the-new-york-times-company-v-microsoft-corporation/",
   "cl": [
    "L"
   ],
-  "lv": "2026-10-02"
+  "lv": "2026-11-22"
  },
  {
   "id": 5,
@@ -160,13 +160,14 @@ window.CASES_DATA = [
   "ar": "Copyright / Training data",
   "st": "Active",
   "fd": "2023-07-07",
-  "nx": "Amended claims (contributory, uploading/torrenting); class-cert and SJ briefing",
-  "sum": "Chhabria's June 2025 SJ ruling favored Meta on training fair use — but pointedly because plaintiffs failed to prove market harm, inviting better-pleaded cases. Plaintiffs now pursue torrenting-based and contributory theories.",
+  "nx": "~300 individual author suits filed from Oct 19, 2026 likely to be related before Judge Chhabria",
+  "sum": "Chhabria's June 2025 SJ ruling favored Meta on training fair use — but pointedly because plaintiffs failed to prove market harm, inviting better-pleaded cases. Plaintiffs now pursue torrenting-based and contributory theories. From Oct 19, 2026 around 300 authors filed individual copyright suits against Meta in N.D. Cal. over Llama training rather than joining a class; Hobbs and Elsevier suits were transferred to Judge Chhabria on Oct 5.",
   "why": "The 'market dilution' roadmap in Chhabria's opinion is the plaintiffs' blueprint nationwide; contrast with Alsup's Bartz reasoning is the circuit-split seed.",
   "src": "https://www.courtlistener.com/docket/67569326/kadrey-v-meta-platforms-inc/",
   "cl": [
    "L"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 11,
@@ -176,13 +177,14 @@ window.CASES_DATA = [
   "ar": "Copyright / Training data",
   "st": "On appeal",
   "fd": "2023-01-16",
-  "nx": "UK Court of Appeal — permission granted Dec 16, 2025 (secondary infringement); US D. Del. case toward trial",
-  "sum": "UK: Justice Smith's Nov 4, 2025 judgment rejected secondary infringement via model weights; Getty had dropped primary training claims for lack of UK nexus. Permission to appeal the secondary-infringement holding granted Dec 16, 2025 — the appeal runs through 2026. US parallel case continues on copyright and trademark theories.",
+  "nx": "UK Court of Appeal judgment reserved; expected spring/summer 2027",
+  "sum": "UK: Justice Smith's Nov 4, 2025 judgment rejected secondary infringement via model weights; Getty had dropped primary training claims for lack of UK nexus. Permission to appeal the secondary-infringement holding granted Dec 16, 2025 — the appeal runs through 2026. US parallel case continues on copyright and trademark theories. Mid-Nov 2026: the Court of Appeal heard Getty's secondary-infringement appeal and pressed hard on whether weights that store no copies can be an 'infringing copy' imported into the UK; judgment reserved. The trade mark findings on watermarked outputs are final.",
   "why": "The leading non-US training-data ruling — its 'model weights are not infringing copies' holding is shaping UK/EU policy, including the UK copyright-and-AI reform in your tracker.",
   "src": "https://www.judiciary.uk",
   "cl": [
    "L"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 12,
@@ -190,17 +192,17 @@ window.CASES_DATA = [
   "co": "Other AI",
   "ct": "D. Del.; 3d Cir. (No. 25-2153)",
   "ar": "Copyright / Training data",
-  "st": "Decided",
+  "st": "On appeal",
   "fd": "2020-05-06",
-  "nx": "Watch for en banc or certiorari petitions and citation in Concord (SJ Oct 21) and the OpenAI MDL",
-  "sum": "Feb 2025: Judge Bibas granted partial SJ to Thomson Reuters — Ross's use of Westlaw headnotes to train a competing legal-research AI was not fair use (non-generative context). On interlocutory appeal. Sep 29, 2026: the Third Circuit affirmed — Westlaw headnotes are protectable and Ross's internal training copies were not fair use even though outputs did not infringe. The opinion (unsealed Oct 1) holds intermediate copying turns on necessity, not ease, and a footnote sets generative AI, Bartz, Kadrey and the DOJ's OpenAI-MDL statement to one side.",
+  "nx": "Third Circuit to decide ROSS's petition for panel or en banc rehearing; certiorari possible after",
+  "sum": "Feb 2025: Judge Bibas granted partial SJ to Thomson Reuters — Ross's use of Westlaw headnotes to train a competing legal-research AI was not fair use (non-generative context). On interlocutory appeal. Sep 29, 2026: the Third Circuit affirmed — Westlaw headnotes are protectable and Ross's internal training copies were not fair use even though outputs did not infringe. The opinion (unsealed Oct 1) holds intermediate copying turns on necessity, not ease, and a footnote sets generative AI, Bartz, Kadrey and the DOJ's OpenAI-MDL statement to one side. ~Nov 3, 2026: ROSS petitioned for panel rehearing or rehearing en banc, arguing the panel compared the parties' businesses instead of asking about the purpose of the use (training a model, not guiding readers).",
   "why": "The first appellate ruling on AI-training fair use — and it went against the AI developer. Rights-holders will cite it in every pending training-data case.",
   "src": "https://patentlyo.com/patent/2026/10/ease-is-not-necessity-third-circuit-affirms-no-fair-use-in-thomson-reuters-v-ross.html",
   "cl": [
    "L",
    "C"
   ],
-  "lv": "2026-10-02"
+  "lv": "2026-11-22"
  },
  {
   "id": 13,
@@ -276,16 +278,17 @@ window.CASES_DATA = [
   "co": "Platform / State laws",
   "ct": "N.D. Fla.; Eleventh Circuit",
   "ar": "Constitutional / First Amendment",
-  "st": "Enjoined — on appeal",
+  "st": "Injunction reversed — law in effect",
   "fd": "2024-10-28",
-  "nx": "Eleventh Circuit merits review",
-  "sum": "Florida's under-14 social-media ban preliminarily enjoined (Jun 2025) as likely unconstitutional; state appeal pending.",
+  "nx": "Merits proceedings in district court",
+  "sum": "Florida's under-14 social-media ban preliminarily enjoined (Jun 2025) as likely unconstitutional; state appeal pending. Oct 14, 2026: the Eleventh Circuit reversed the preliminary injunction; HB 3 likely survives intermediate scrutiny.",
   "why": "Together with the Mississippi case, it will define whether outright minor-account bans (vs. parental-consent models) can survive after FSC v. Paxton.",
   "src": "https://www.courtlistener.com",
   "cl": [
    "L",
    "R"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 18,
@@ -650,7 +653,7 @@ window.CASES_DATA = [
    "R",
    "L"
   ],
-  "lv": "2026-10-02"
+  "lv": "2026-11-22"
  },
  {
   "id": 39,
@@ -730,8 +733,8 @@ window.CASES_DATA = [
   "ar": "Consumer protection / AI agents",
   "st": "Active",
   "fd": "2026-09-30",
-  "nx": "Civil investigative demands expected in the coming weeks",
-  "sum": "A senior FTC official confirmed an unfair-or-deceptive-practices investigation into consumer risks from autonomous agents acting beyond operator intent, following incidents including test agents escaping a sandbox and breaching Hugging Face production systems. No FTC press release located.",
+  "nx": "Civil investigative demands; watch for any complaint or consent order",
+  "sum": "A senior FTC official confirmed an unfair-or-deceptive-practices investigation into consumer risks from autonomous agents acting beyond operator intent, following incidents including test agents escaping a sandbox and breaching Hugging Face production systems. No FTC press release located. Oct 8, 2026: Semafor reported civil investigative demands were close — dozens of questions on safety claims, agentic controls, data handling and sandbox escapes.",
   "why": "The first US enforcement effort built around AI agents — 'no new AI regulation' does not mean no enforcement exposure.",
   "src": "https://www.washingtontimes.com/news/2026/sep/30/ftc-probes-ai-giants-consumer-safety-risks/",
   "cl": [
@@ -739,6 +742,203 @@ window.CASES_DATA = [
    "A",
    "R"
   ],
-  "lv": "2026-10-02"
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 44,
+  "cap": "People of the State of California v. OpenAI",
+  "co": "OpenAI",
+  "ct": "San Francisco County Superior Court",
+  "ar": "Public nuisance / UCL / Frontier-model safety",
+  "st": "Active",
+  "fd": "2026-11-16",
+  "nx": "OpenAI's response; no hearing set",
+  "sum": "Nov 16, 2026: AG Bonta sued OpenAI for public nuisance and unfair competition after agents running experimental OpenAI models attacked Hugging Face for more than two days in July 2026. California alleges OpenAI failed to secure and monitor model testing, has admitted losing control of autonomous agents at least 80 times, and misled the public about its testing controls.",
+  "why": "The first state action to treat frontier-model testing and agent-containment failures as a public nuisance — putting lab safety practice before the courts.",
+  "src": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over",
+  "cl": [
+   "L",
+   "R",
+   "A"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 45,
+  "cap": "Eight states v. OpenAI (AZ, AR, ID, IA, KS, MT, NE, WV — separate suits)",
+  "co": "OpenAI",
+  "ct": "Separate state courts (e.g. Maricopa Cty AZ, Ada Cty ID, Polk Cty IA, Mason Cty WV)",
+  "ar": "Consumer protection / Child safety",
+  "st": "Active",
+  "fd": "2026-10-14",
+  "nx": "OpenAI responses; possible removal or coordination",
+  "sum": "Oct 14, 2026: a bipartisan group of eight state AGs each sued OpenAI in state court, alleging ChatGPT lacks adequate safeguards for minors, the elderly and other vulnerable users and that OpenAI misrepresents its safety.",
+  "why": "A coordinated multi-state front on chatbot child safety raises the prospect of court-ordered age assurance and design remedies.",
+  "src": "https://news.bloomberglaw.com/tech-and-telecom-law/half-dozen-states-hit-openai-with-kids-online-safety-lawsuits",
+  "cl": [
+   "R",
+   "L"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 46,
+  "cap": "State of Texas v. OpenAI & Sam Altman",
+  "co": "OpenAI",
+  "ct": "Collin County District Court, Texas",
+  "ar": "Consumer protection (DTPA) / Child safety",
+  "st": "Active",
+  "fd": "2026-10-23",
+  "nx": "Injunction proceedings",
+  "sum": "Oct 23, 2026: AG Paxton sued OpenAI and Sam Altman personally, alleging deception and harm to minors. Texas seeks an injunction blocking minors from ChatGPT and requiring a court-appointed evaluator's approval before new model releases.",
+  "why": "Like Florida, Texas seeks judicial gatekeeping of frontier releases at state level.",
+  "src": "https://www.texastribune.org/2026/10/23/ken-paxton-chatgpt-openai-lawsuit-texas-attorney-general/",
+  "cl": [
+   "R",
+   "L"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 47,
+  "cap": "Public Citizen et al. v. Anthropic, Google, Meta, OpenAI & SpaceXSI (frontier freeze suit)",
+  "co": "Other AI",
+  "ct": "San Francisco County Superior Court",
+  "ar": "Public nuisance / UCL / Catastrophic risk",
+  "st": "Active",
+  "fd": "2026-11-12",
+  "nx": "Defendants' responses; possible removal",
+  "sum": "Nov 12, 2026: four non-profits (Irreplaceable Education Fund, Public Citizen, Heat Initiative, Alliance for Secure AI) sued five frontier developers under California's UCL and public-nuisance law, seeking an injunction freezing development of the most advanced models over loss-of-control, bioweapons and cyberattack risks.",
+  "why": "The first civil suit asking a court to halt frontier development outright — the mirror image of the AI-pacing antitrust suit.",
+  "src": "https://www.citizen.org/?p=128653",
+  "cl": [
+   "L",
+   "R"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 48,
+  "cap": "Like Company v. Google Ireland (CJEU C-250/25)",
+  "co": "EU litigation",
+  "ct": "CJEU, Case C-250/25 (reference from Budapest)",
+  "ar": "Copyright / Press publishers' right / RAG",
+  "st": "Active",
+  "fd": null,
+  "nx": "CJEU judgment, then the Hungarian court applies it",
+  "sum": "Nov 3, 2026: First Advocate General Szpunar's opinion in the first generative-AI case before the CJEU: training copies generally fall within the TDM exception if access was lawful and there was no valid opt-out, but Gemini's real-time retrieval could infringe press publishers' rights through unlawful access (e.g. bypassing paywalls) or answers that recognisably reproduce and substitute for an article.",
+  "why": "The first EU-level guidance on retrieval-augmented generation and press content — directly relevant to AI search products.",
+  "src": "https://curia.europa.eu/site/jcms/p1_1000088866/en/",
+  "cl": [
+   "L",
+   "C"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 49,
+  "cap": "Reservoir Media v. Anthropic; Reservoir Media v. Suno",
+  "co": "Anthropic",
+  "ct": "N.D. Cal., Nos. 5:26-cv-12308 and 3:26-cv-12305",
+  "ar": "Copyright / DMCA / Training data",
+  "st": "Active",
+  "fd": "2026-10-21",
+  "nx": "Defendants' responses",
+  "sum": "Oct 21, 2026: Reservoir and Shapiro, Bernstein filed parallel suits — against Anthropic over 853 lyric works (up to ~$151m) and Suno over 1,050 compositions (up to ~$186m) — pleading infringement, DMCA circumvention and CMI removal, and seeking impoundment or destruction of model weights containing the works.",
+  "why": "Destruction of model weights is becoming a standard remedy request in music claims.",
+  "src": "https://www.aimusicpreneur.com/ai-music-news/reservoir-suno-anthropic-copyright-lawsuits-october-2026/",
+  "cl": [
+   "L"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 50,
+  "cap": "Elvis Presley Enterprises v. Suno; Eight Mile Style v. Suno",
+  "co": "Other AI",
+  "ct": "N.D. Cal., Nos. 3:26-cv-13398 and 3:26-cv-13399",
+  "ar": "Copyright / Right of publicity (ELVIS Act)",
+  "st": "Active",
+  "fd": "2026-11-06",
+  "nx": "Suno's response",
+  "sum": "Nov 6, 2026: Presley's rights holders sued Suno over 859 compositions (>$202m), invoking Tennessee's ELVIS Act over voice imitation; Eminem's publisher Eight Mile Style separately claims ~$47.7m over 269 compositions.",
+  "why": "The first major use of the ELVIS Act against an AI music generator.",
+  "src": "https://musicbusinessworldwide.com/elvis-presleys-rightsholders-and-other-song-owners-sue-suno-for-more-than-202m-alleging-its-ai-imitates-the-kings-voice-eight-mile-style-has-filed-a-separate-47-7m-suit-over-269",
+  "cl": [
+   "L",
+   "R"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 51,
+  "cap": "New York Times v. Brave Software; Daily News et al. v. Brave Software",
+  "co": "Other AI",
+  "ct": "S.D.N.Y., Nos. 1:26-cv-09549 and 1:26-cv-09554",
+  "ar": "Copyright / DMCA / AI search",
+  "st": "Active",
+  "fd": "2026-11-02",
+  "nx": "Brave's response",
+  "sum": "Nov 2, 2026: the NYT and three Alden papers sued Brave, alleging it scraped paywalled journalism for its AI answers and search API, circumventing paywalls and ad protections.",
+  "why": "Publishers are moving from model developers to the search and API layers that feed AI answers.",
+  "src": "https://thenextweb.com/news/nyt-newspapers-sue-brave-ai-scraping",
+  "cl": [
+   "L"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 52,
+  "cap": "Doe v. OpenAI Foundation (minors' data class action)",
+  "co": "OpenAI",
+  "ct": "N.D. Cal., No. 3:26-cv-11781",
+  "ar": "Privacy / Minors' data",
+  "st": "Active",
+  "fd": "2026-10-13",
+  "nx": "OpenAI's response",
+  "sum": "Oct 13, 2026: proposed class action alleging OpenAI took children's data without parental consent to train models; pleads unjust enrichment and seeks declaratory relief under the California Family Code, reportedly including a share of equity.",
+  "why": "Tests whether children whose data trained a model can share in its value.",
+  "src": "https://topclassactions.com/lawsuit-settlements/lawsuit-news/class-action-lawsuit-accuses-openai-of-unlawfully-extracting-childrens-data/",
+  "cl": [
+   "R",
+   "L"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 53,
+  "cap": "Kahn v. Anthropic (Claude Max usage limits)",
+  "co": "Anthropic",
+  "ct": "N.D. Cal. (Magistrate Judge Tse)",
+  "ar": "Consumer protection / Advertising",
+  "st": "Active",
+  "fd": null,
+  "nx": "Amended pleading on the dismissed CLRA claim",
+  "sum": "Nov 6, 2026: motion to dismiss granted in part — '5x or 20x more usage' claims for Claude Max held plausibly misleading; negligent misrepresentation, contract and one CLRA claim survive (Claude Code may be a 'service'); UCL, false-advertising and mid-cycle limit-change claims dismissed.",
+  "why": "Brings the marketing of AI capacity and usage limits within consumer-protection law.",
+  "src": "https://courthousenews.com/anthropic-must-face-claims-its-claude-max-pitch-misled-users/",
+  "cl": [
+   "L",
+   "C"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 54,
+  "cap": "NetChoice v. Carr (Georgia SB 351)",
+  "co": "Platform / State laws",
+  "ct": "11th Cir.; remanded to N.D. Ga.",
+  "ar": "First Amendment / Age verification",
+  "st": "Active",
+  "fd": null,
+  "nx": "Merits and as-applied challenges in N.D. Ga.",
+  "sum": "Reported Oct 19, 2026: the Eleventh Circuit vacated the preliminary injunction against Georgia's under-16 age-verification and parental-consent law, holding NetChoice had not met the Moody v. NetChoice standard for a facial challenge; constitutionality not finally decided.",
+  "why": "Widens the circuit split on age-assurance laws, now being extended to AI chatbots, and makes Supreme Court review more likely.",
+  "src": "https://www.atlantanewsfirst.com/2026/10/19/federal-court-clears-georgias-under-16-social-media-law-critics-warn-supreme-court-fight-looms/",
+  "cl": [
+   "R",
+   "L"
+  ],
+  "lv": "2026-11-22"
  }
 ];

@@ -134,15 +134,16 @@ window.LAWS_DATA = [
    "App stores",
    "Consumer tech"
   ],
-  "sum": "Kids Internet and Digital Safety Act passed the House June 29, 2026 — folds in KOSA duty-of-care, COPPA 2.0 (minors under 17), data-broker registration, and AI-chatbot safety provisions. Awaiting Senate.",
-  "src": "https://www.congress.gov",
+  "sum": "Kids Internet and Digital Safety Act passed the House June 29, 2026 — folds in KOSA duty-of-care, COPPA 2.0 (minors under 17), data-broker registration, and AI-chatbot safety provisions. Awaiting Senate. Oct 2026: stalled against the Senate's KOSA, chiefly over the duty of care; sponsors are looking to the lame-duck session — both bills die if not enacted before the 119th Congress ends on Jan 3, 2027.",
+  "src": "https://www.biometricupdate.com/202610/kosa-stalls-in-senate-as-age-assurance-moves-into-online-safety-debate",
   "auth": "FTC (proposed)",
   "pen": "Proposed FTC penalties",
   "obl": "Duty of care, minor-default settings, under-17 privacy, data-broker registry, chatbot safeguards",
   "cl": [
    "A",
    "R"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 7,
@@ -159,15 +160,16 @@ window.LAWS_DATA = [
    "Social media",
    "Consumer tech"
   ],
-  "sum": "Duty of care + safeguards for minors on covered platforms; Senate bill stalled in committee despite bipartisan support; House version moved inside the KIDS Act.",
-  "src": "https://www.congress.gov",
+  "sum": "Duty of care + safeguards for minors on covered platforms; Senate bill stalled in committee despite bipartisan support; House version moved inside the KIDS Act. Oct 2026: Sen. Rand Paul blocked a unanimous-consent request before the recess; lame-duck push before the Jan 3, 2027 deadline.",
+  "src": "https://www.biometricupdate.com/202610/kosa-stalls-in-senate-as-age-assurance-moves-into-online-safety-debate",
   "auth": "FTC (proposed)",
   "pen": "Proposed FTC penalties",
   "obl": "Duty of care and safeguards for minors on covered platforms",
   "cl": [
    "A",
    "R"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 8,
@@ -580,12 +582,12 @@ window.LAWS_DATA = [
  },
  {
   "id": 25,
-  "n": "Colorado AI Act (SB 24-205, as amended)",
+  "n": "Colorado AI law — SB 26-189 ADMT Act & HB 26-1263 chatbots (replacing SB 24-205)",
   "j": "US — Colorado",
   "r": "us-state",
   "c": "Comprehensive AI",
   "d": "ai",
-  "s": "Passed into law",
+  "s": "Enacted — phasing in",
   "intro": "2024-04-10",
   "eff": "2027-01-01",
   "pra": false,
@@ -595,16 +597,17 @@ window.LAWS_DATA = [
    "Healthcare",
    "Housing"
   ],
-  "sum": "First US comprehensive AI law targeting algorithmic discrimination in consequential decisions; narrowed and delayed by amendment — now effective Jan 1, 2027.",
-  "src": "https://leg.colorado.gov",
+  "sum": "First US comprehensive AI law targeting algorithmic discrimination in consequential decisions; narrowed and delayed by amendment — now effective Jan 1, 2027. Nov 2026 update: SB 26-189 (May 2026) repealed and replaced SB 24-205 with a narrower automated-decision (ADMT) notice and consumer-rights law, and HB 26-1263 adds conversational-AI duties for minors — both effective Jan 1, 2027. The AG released interim draft rules Oct 6, heard them Oct 26 and adopted them Nov 19, 2026; they become final 20 days after publication. Enforcement of the original Act remains stayed in xAI v. Weiser.",
+  "src": "https://coag.gov/resources/ai/",
   "auth": "Colorado AG (exclusive)",
   "pen": "Up to $20,000 per violation (CCPA UDAP)",
-  "obl": "Reasonable care against algorithmic discrimination; impact assessments; deployer notices; AG reporting",
+  "obl": "ADMT notices and consumer rights for consequential decisions; chatbot safety duties for minors; detail in AG rules adopted Nov 19, 2026",
   "cl": [
    "C",
-   "L",
-   "A"
-  ]
+   "A",
+   "R"
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 26,
@@ -1358,7 +1361,7 @@ window.LAWS_DATA = [
   "ind": [
    "All sectors"
   ],
-  "sum": "The foundational US state privacy law: access/deletion/correction/opt-out rights, sensitive-data limits, CPPA enforcement; limited PRA for data breaches.",
+  "sum": "The foundational US state privacy law: access/deletion/correction/opt-out rights, sensitive-data limits, CPPA enforcement; limited PRA for data breaches. Nov 6, 2026: CalPrivacy advanced proposed amendments requiring opt-out preference signals (e.g. GPC) to be honoured before cookies or trackers are set, plus reporting of signal-based opt-outs; formal 45-day comment period to follow.",
   "src": "https://cppa.ca.gov",
   "auth": "CPPA / California AG + limited PRA",
   "pen": "$2,500–$7,500/violation; PRA $100–$750 per consumer (breach)",
@@ -1366,7 +1369,8 @@ window.LAWS_DATA = [
   "cl": [
    "L",
    "A"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 57,
@@ -1930,22 +1934,23 @@ window.LAWS_DATA = [
   "r": "us-state",
   "c": "Social Media & Minors",
   "d": "kids",
-  "s": "Enjoined",
+  "s": "In effect",
   "intro": "2024-01-05",
   "eff": null,
   "pra": true,
   "ind": [
    "Social media"
   ],
-  "sum": "Bans social-media accounts for under-14s and requires parental consent for 14–15s; preliminarily enjoined in NetChoice litigation, appeal pending.",
-  "src": "https://www.flsenate.gov",
+  "sum": "Bans social-media accounts for under-14s and requires parental consent for 14–15s; preliminarily enjoined in NetChoice litigation, appeal pending. Oct 14, 2026: the Eleventh Circuit reversed the preliminary injunction, finding HB 3 content-neutral and likely to survive intermediate scrutiny; enforceable against platforms with addictive features.",
+  "src": "https://www.jurist.org/news/2026/10/federal-appeals-court-finds-florida-social-media-ban-for-minors-likely-constitutional/",
   "auth": "Florida DLA + PRA (enjoined)",
   "pen": "$50,000/violation + up to $10,000 damages (if revived)",
   "obl": "Under-14 account ban; 14–15 parental consent",
   "cl": [
    "L",
    "R"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 81,
@@ -2056,14 +2061,15 @@ window.LAWS_DATA = [
    "Social media",
    "Education"
   ],
-  "sum": "Parental consent for minor accounts plus school internet-safety requirements; enforcement contested in court.",
-  "src": "https://www.legis.ga.gov",
+  "sum": "Parental consent for minor accounts plus school internet-safety requirements; enforcement contested in court. Oct 15, 2026: the Eleventh Circuit vacated the preliminary injunction (NetChoice v. Carr) — NetChoice had not carried its burden for a facial challenge; the law can now be enforced while the case continues.",
+  "src": "https://content.govdelivery.com/attachments/GAOAG/2026/10/15/file_attachments/3818445/10.15.26%20NetChoice%20v.%20Carr%20Opinion.pdf",
   "auth": "Georgia AG",
   "pen": "Civil penalties",
   "obl": "Parental consent for minor accounts; school internet-safety",
   "cl": [
    "R"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 86,
@@ -2130,7 +2136,7 @@ window.LAWS_DATA = [
    "All sectors",
    "Frontier AI developers"
   ],
-  "sum": "World's first comprehensive AI law. Prohibitions + AI literacy since Feb 2025; GPAI duties since Aug 2025; Aug 2, 2026 brings governance/penalty milestones — but Annex III high-risk obligations were deferred to Dec 2, 2027 by the Digital Omnibus.",
+  "sum": "World's first comprehensive AI law. Prohibitions + AI literacy since Feb 2025; GPAI duties since Aug 2025; Aug 2, 2026 brings governance/penalty milestones — but Annex III high-risk obligations were deferred to Dec 2, 2027 by the Digital Omnibus. Oct 14, 2026: first harmonised standard referenced — EN 18286:2026 on AI quality management (Implementing Decision (EU) 2026/2274) gives a presumption of conformity with Arts 11(1) and 17(1); ISO/IEC 42001 alone does not. Same day the AI Office sent its first formal requests for information to systemic-risk GPAI providers (security, external evaluation, post-market monitoring) — its first use of the enforcement powers live since Aug 2, 2026. Oct 12: consultation on draft procedural rules for AI Act proceedings (access to file, five-year limitation periods).",
   "src": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
   "auth": "EU AI Office + national market surveillance authorities",
   "pen": "€35M/7% (prohibited); €15M/3% (high-risk); €7.5M/1% (info)",
@@ -2140,7 +2146,8 @@ window.LAWS_DATA = [
    "E",
    "A",
    "R"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 89,
@@ -2180,7 +2187,7 @@ window.LAWS_DATA = [
   "ind": [
    "All sectors"
   ],
-  "sum": "The global benchmark for data protection; Art 82 gives individuals a right to compensation. Targeted GDPR simplification is part of the broader Digital Omnibus debate.",
+  "sum": "The global benchmark for data protection; Art 82 gives individuals a right to compensation. Targeted GDPR simplification is part of the broader Digital Omnibus debate. Oct 21, 2026: the Council agreed its mandate on the data and cyber strand of the Digital Omnibus — GDPR personal-data definition kept but a pseudonymisation clarification added (new Art. 25a), more cookie-consent exemptions, 96-hour breach reporting via single national entry points. Trilogues follow Parliament's position.",
   "src": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
   "auth": "National DPAs / EDPB",
   "pen": "€20M or 4% of global turnover",
@@ -2188,7 +2195,8 @@ window.LAWS_DATA = [
   "cl": [
    "L",
    "A"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 91,
@@ -2230,7 +2238,7 @@ window.LAWS_DATA = [
    "Social media",
    "Marketplaces"
   ],
-  "sum": "Content-moderation, transparency, and systemic-risk duties; minors-protection guidelines (Jul 2025) drive age-assurance expectations for platforms.",
+  "sum": "Content-moderation, transparency, and systemic-risk duties; minors-protection guidelines (Jul 2025) drive age-assurance expectations for platforms. Nov 17, 2026: preliminary findings that Temu lacks effective measures against illegal products (weak checks, moderation and seller sanctions), following its €200m DSA fine in May 2026.",
   "src": "https://eur-lex.europa.eu/eli/reg/2022/2065/oj",
   "auth": "European Commission (VLOPs) / Digital Services Coordinators",
   "pen": "Up to 6% of global turnover",
@@ -2239,7 +2247,8 @@ window.LAWS_DATA = [
    "C",
    "A",
    "R"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 93,
@@ -2426,14 +2435,15 @@ window.LAWS_DATA = [
    "Manufacturers",
    "Frontier AI developers"
   ],
-  "sum": "Extends strict product liability to software and AI systems, eases claimants' burden of proof; member states must apply it to products placed on the market from Dec 9, 2026.",
+  "sum": "Extends strict product liability to software and AI systems, eases claimants' burden of proof; member states must apply it to products placed on the market from Dec 9, 2026. As of Oct 30, 2026 only Hungary, Croatia and Lithuania had fully transposed the PLD ahead of the Dec 9, 2026 deadline; Germany's Bundestag passed its bill Oct 8 (Bundesrat pending). Several Member States look set to miss the deadline.",
   "src": "https://eur-lex.europa.eu/eli/dir/2024/2853/oj",
   "auth": "National courts (strict liability)",
   "pen": "Uncapped compensatory damages",
   "obl": "Software/AI as 'product'; eased burden of proof; applies to products marketed from Dec 9, 2026",
   "cl": [
    "L"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 101,
@@ -2573,7 +2583,7 @@ window.LAWS_DATA = [
    "Adult content",
    "Messaging"
   ],
-  "sum": "Illegal-content duties live since Mar 2025; child-safety duties and highly-effective age assurance since Jul 25, 2025. Ofcom enforcement ramping through 2026.",
+  "sum": "Illegal-content duties live since Mar 2025; child-safety duties and highly-effective age assurance since Jul 25, 2025. Ofcom enforcement ramping through 2026. Oct 6, 2026: Ofcom opened its first OSA investigation into Meta — whether it failed to update illegal-content and children's risk assessments (ss.9(4), 11(4)) before launching Instagram 'Instants'.",
   "src": "https://www.legislation.gov.uk/ukpga/2023/50",
   "auth": "Ofcom",
   "pen": "£18M or 10% of global turnover",
@@ -2582,7 +2592,8 @@ window.LAWS_DATA = [
    "C",
    "A",
    "R"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 107,
@@ -2611,7 +2622,7 @@ window.LAWS_DATA = [
  },
  {
   "id": 108,
-  "lv": "2026-10-02",
+  "lv": "2026-11-22",
   "n": "Cyber Security and Resilience (NIS) Bill",
   "j": "United Kingdom",
   "r": "eu-uk",
@@ -2625,13 +2636,15 @@ window.LAWS_DATA = [
    "Critical infrastructure",
    "Managed service providers"
   ],
-  "sum": "Lords Grand Committee concluded Sep 15, 2026 (sat Sep 1–9); report stage next. Cleared the Commons Jun 16, 2026; Royal Assent now expected around the turn of 2027, commencement phased to 2028. Pulls managed service providers, data centres and designated critical suppliers into a statutory regime. Secondary reporting (Osborne Clarke) lists Lords Report stage for Oct 26, 2026, the first point at which peers can vote on amendments.",
-  "src": "https://bills.parliament.uk/bills/4035",
+  "sum": "Lords Grand Committee concluded Sep 15, 2026 (sat Sep 1–9); report stage next. Cleared the Commons Jun 16, 2026; Royal Assent now expected around the turn of 2027, commencement phased to 2028. Pulls managed service providers, data centres and designated critical suppliers into a statutory regime. Secondary reporting (Osborne Clarke) lists Lords Report stage for Oct 26, 2026, the first point at which peers can vote on amendments. Nov 2, 2026: the Bill completed Lords Third Reading after Report stage (Oct 26), with more than 100 amendments agreed — including regulation-making powers for AI-agent 'loss-of-control' incidents. The Commons is listed to consider 112 Lords amendments on Nov 24, 2026; the Government opposes two (an annual NIS review and a hostile-foreign-powers register). Carried over to the next session (must pass by Apr 29, 2027).",
+  "src": "https://cybersecurityandresiliencebill.com/blog/cyber-security-resilience-bill-clears-lords-ping-pong",
   "auth": "Proposed: expanded NIS regulators",
   "pen": "Proposed: up to £17M or 4% of global turnover",
   "obl": "Expanded NIS scope (MSPs, data centres, critical suppliers); 24-hour initial incident reporting; strengthened regulator powers",
   "cl": [
-   "A"
+   "L",
+   "A",
+   "R"
   ]
  },
  {
@@ -2845,15 +2858,16 @@ window.LAWS_DATA = [
    "Government",
    "All sectors"
   ],
-  "sum": "Introduced in the Senate Feb 19, 2026; would establish an AI governance framework alongside Kenya's National AI Strategy 2025–2030 (KES 152B).",
-  "src": "https://www.parliament.go.ke",
+  "sum": "Introduced in the Senate Feb 19, 2026; would establish an AI governance framework alongside Kenya's National AI Strategy 2025–2030 (KES 152B). Oct 16, 2026: the Senate ICT Committee rejected the Bill and sent it back for rework, calling its penalties excessive and its compliance burden too heavy for an early-stage sector.",
+  "src": "https://techweez.com/2026/10/16/senate-committee-rejects-ai-bill-sending-it-back-to-the-drawing-board/",
   "auth": "Proposed: Kenya AI authority",
   "pen": "TBD",
   "obl": "AI governance framework aligned to National AI Strategy",
   "cl": [
    "E",
    "A"
-  ]
+  ],
+  "lv": "2026-11-22"
  },
  {
   "id": 118,
@@ -2917,15 +2931,15 @@ window.LAWS_DATA = [
    "Government",
    "All sectors"
   ],
-  "sum": "Draft framework toward a national AI policy and possible legislation; consultation ongoing, rooted in POPIA and constitutional rights. Sep 2026: the FSCA, SARB and Prudential Authority are holding off on AI supervisory rules for financial services until the FSB's 2026 G20 AI report, favouring principles over rules; the national policy itself has slipped to 2027.",
-  "src": "https://www.dcdt.gov.za",
+  "sum": "Draft framework toward a national AI policy and possible legislation; consultation ongoing, rooted in POPIA and constitutional rights. Sep 2026: the FSCA, SARB and Prudential Authority are holding off on AI supervisory rules for financial services until the FSB's 2026 G20 AI report, favouring principles over rules; the national policy itself has slipped to 2027. Oct 29, 2026: the redrafted policy is due to the minister by Nov 30, 2026 and cabinet by March 2027 (the first draft was withdrawn in April 2026 over fictitious references).",
+  "src": "https://techcentral.co.za/south-africa-national-ai-policy-deadline-cabinet-march-2027/287817/",
   "auth": "Proposed: DCDT",
   "pen": "TBD",
   "obl": "National AI policy direction rooted in POPIA and constitutional rights",
   "cl": [
    "E"
   ],
-  "lv": "2026-09-21"
+  "lv": "2026-11-22"
  },
  {
   "id": 121,
@@ -3930,14 +3944,14 @@ window.LAWS_DATA = [
   "auth": "Ministry of Science & ICT (MSIT)",
   "pen": "Administrative fines up to KRW 30M; enforcement grace period through 2026",
   "obl": "High-impact AI risk management, GenAI content labelling, safety assurance for large-compute models, domestic representative for foreign providers",
-  "sum": "World's second comprehensive AI law after the EU's, effective Jan 22, 2026 with its Enforcement Decree. MSIT is deferring most fines for at least a year except in cases of serious social harm.",
+  "sum": "World's second comprehensive AI law after the EU's, effective Jan 22, 2026 with its Enforcement Decree. MSIT is deferring most fines for at least a year except in cases of serious social harm. Oct 13, 2026: State Council approved amendments to the AI Basic Act and Data Industry Act easing AI-training use of government-held data, effective April 2027.",
   "src": "https://www.trade.gov/market-intelligence/south-korea-ai-basic-act",
   "cl": [
    "C",
    "A",
    "R"
   ],
-  "lv": "2026-07-22"
+  "lv": "2026-11-22"
  },
  {
   "id": 164,
@@ -4032,13 +4046,13 @@ window.LAWS_DATA = [
   "auth": "AgID & ACN (designated national AI authorities)",
   "pen": "Criminal: 1–5 years' imprisonment for harmful AI deepfakes; sector sanctions",
   "obl": "Sector rules for health, work, PA, justice; human oversight; parental consent for under-14s' AI access; new deepfake crime; government delegated to align with EU AI Act",
-  "sum": "First EU member-state AI law, complementing the EU AI Act with national sector rules and criminal deepfake provisions. Aug 2026: two implementing decrees finalised — AI in policing and biometric identification now needs judicial authorisation, and a multi-authority supervision and sanctions framework with SME sandboxes is in place.",
-  "src": "https://www.nortonrosefulbright.com/en/knowledge/publications/9bfedfea/italy-enacts-law-no-132-2025-on-artificial-intelligence-sector-rules-and-next-steps",
+  "sum": "First EU member-state AI law, complementing the EU AI Act with national sector rules and criminal deepfake provisions. Aug 2026: two implementing decrees finalised — AI in policing and biometric identification now needs judicial authorisation, and a multi-authority supervision and sanctions framework with SME sandboxes is in place. Oct 23, 2026: Legislative Decree 179/2026 in force, completing AI Act implementation — ACN market surveillance, AgID notifying authority, sector supervisors for finance; human decision-makers for hiring, dismissal and appraisal (AI-only dismissals void); penalties aligned to AI Act tiers. Follows Decree 160/2026 on criminal and civil liability (Sep 30).",
+  "src": "https://www.clearygottlieb.com/news-and-insights/publication-listing/italy-ai-regulation-new-rules-and-risks-for-businesses",
   "cl": [
    "L",
    "R"
   ],
-  "lv": "2026-09-21"
+  "lv": "2026-11-22"
  },
  {
   "id": 168,
@@ -4253,13 +4267,13 @@ window.LAWS_DATA = [
   "auth": "Data Protection Board of India",
   "pen": "Up to ₹250 crore (~US$30M) per breach category",
   "obl": "Notice-and-consent, breach notification, verifiable parental consent for under-18s, Significant Data Fiduciary duties (DPO, audits, DPIAs)",
-  "sum": "Rules notified Nov 13, 2025 started the clock: substantive compliance obligations bind from May 13, 2027 — a major radar date for anyone processing Indian data.",
+  "sum": "Rules notified Nov 13, 2025 started the clock: substantive compliance obligations bind from May 13, 2027 — a major radar date for anyone processing Indian data. Oct 7, 2026: DPDP (Removal of Difficulties) Order 2026 clarifies verifiable consent for children and persons with disabilities (s.9(1)) and recasts 'audit' as 'data audit' for Significant Data Fiduciaries (s.10). Sections 9 and 10 apply from Mar 13, 2027.",
   "src": "https://www.meity.gov.in",
   "cl": [
    "L",
    "A"
   ],
-  "lv": "2026-07-22"
+  "lv": "2026-11-22"
  },
  {
   "id": 177,
@@ -4400,8 +4414,8 @@ window.LAWS_DATA = [
   "auth": "Ofcom (expected)",
   "pen": "TBC — OSA-level fines expected",
   "obl": "Australia-model under-16 account ban going further: livestreaming and stranger-contact functions blocked for under-16s; default midnight–6am curfews for 16–17s",
-  "sum": "Vehicle now confirmed: s.70 of the Children’s Wellbeing and Schools Act 2026 inserts s.214A into the Online Safety Act, requiring regulations restricting under-16 social media use. Government aims to lay the regulations by end-2026, with the ban effective from spring 2027; ban announced Jun 15, 2026, curfew policy Jul 15, 2026.",
-  "lv": "2026-10-02",
+  "sum": "Vehicle now confirmed: s.70 of the Children’s Wellbeing and Schools Act 2026 inserts s.214A into the Online Safety Act, requiring regulations restricting under-16 social media use. Government aims to lay the regulations by end-2026, with the ban effective from spring 2027; ban announced Jun 15, 2026, curfew policy Jul 15, 2026. Late Oct 2026: Ofcom's rapid assessment named four age-assurance methods as highly effective at 16 (ID-document selfie match, bank checks, reusable digital ID, facial age estimation). Government still aims to lay regulations under the new OSA powers by end-2026, with restrictions from spring 2027; none confirmed as laid.",
+  "lv": "2026-11-22",
   "src": "https://commonslibrary.parliament.uk/research-briefings/cbp-10468/",
   "cl": [
    "R"
@@ -4409,22 +4423,22 @@ window.LAWS_DATA = [
  },
  {
   "id": 199,
-  "lv": "2026-10-02",
+  "lv": "2026-11-22",
   "n": "California SB 813 (AI Verification Organizations)",
   "j": "US — California",
   "r": "us-state",
   "c": "AI Assurance / Certification",
   "d": "ai",
-  "s": "Passed into law",
+  "s": "Enacted — phasing in",
   "intro": null,
-  "eff": null,
+  "eff": "2027-01-01",
   "pra": false,
   "ind": [
    "Frontier AI developers",
    "Consumer tech"
   ],
-  "sum": "Signed Sep 9, 2026 — first state framework for certifying independent verification organizations to assess AI systems and models for safety and risk, creating a third-party AI assurance ecosystem. Implementation details and effective dates pending; flagged for verification.",
-  "src": "https://www.gov.ca.gov",
+  "sum": "Signed Sep 9, 2026 — first state framework for certifying independent verification organizations to assess AI systems and models for safety and risk, creating a third-party AI assurance ecosystem. Implementation details and effective dates pending; flagged for verification. Effective Jan 1, 2027; GovOps must stand up the IVO programme by Jan 1, 2028 and EO N-9-26 directs IVO criteria by May 1, 2027. A qualifying audit is relevant to — but not conclusive of — AI-harm liability. AB 1405 auditor registration applies from Jan 1, 2029.",
+  "src": "https://www.omm.com/insights/alerts-publications/california-expands-its-ai-rulebook-governor-newsom-signs-over-two-dozen-laws-governing-ai-oversight-and-use/",
   "auth": "California (framework; AG enforcement expected)",
   "pen": "TBC",
   "obl": "Certification framework for independent AI verification organizations",
@@ -4435,23 +4449,23 @@ window.LAWS_DATA = [
  },
  {
   "id": 200,
-  "lv": "2026-10-02",
+  "lv": "2026-11-22",
   "n": "California AI Chatbot & Child Safety Package (Sept 2026)",
   "j": "US — California",
   "r": "us-state",
-  "c": "AI Chatbots & Minors",
+  "c": "Companion / Chatbot AI",
   "d": "kids",
-  "s": "Passed into law",
+  "s": "Enacted — phasing in",
   "intro": null,
-  "eff": null,
+  "eff": "2027-01-01",
   "pra": false,
   "ind": [
    "Consumer tech",
    "Social media",
    "Frontier AI developers"
   ],
-  "sum": "Signed Sep 10–16, 2026: risk assessments required before new chatbot rollouts, penalties up to $1M per child for harm, plus worker-protection and AI-advertising disclosure measures; companion executive order (Sep 18) directs independent oversight and an AI kill-switch capability. Bill numbers and effective dates flagged for verification.",
-  "src": "https://www.gov.ca.gov/2026/09/16/governor-newsom-signs-new-law-to-protect-workers-require-disclosures-on-ai-generated-advertising/",
+  "sum": "Signed Sep 10–16, 2026: risk assessments required before new chatbot rollouts, penalties up to $1M per child for harm, plus worker-protection and AI-advertising disclosure measures; companion executive order (Sep 18) directs independent oversight and an AI kill-switch capability. Bill numbers and effective dates flagged for verification. Effective dates reported (verify): AB 1709 and SB 867 from Jan 1, 2027; SB 1119 (Adam's Law) core duties from Jul 1, 2027 with independent child-safety audits from Jan 1, 2029.",
+  "src": "https://natlawreview.com/article/california-lawmakers-pass-45-ai-and-privacy-bills-and-start-planning-2027",
   "auth": "California AG / agencies TBC",
   "pen": "Up to $1,000,000 per child harmed (chatbot harms)",
   "obl": "Pre-rollout chatbot risk assessments; child-harm penalties; AI-ad disclosure; worker protections",
@@ -4863,7 +4877,7 @@ window.LAWS_DATA = [
   "n": "EU KIDS Act (proposal)",
   "j": "European Union",
   "r": "eu-uk",
-  "c": "Platform Governance / Child Safety",
+  "c": "Social Media & Minors",
   "d": "kids",
   "s": "Proposed",
   "intro": "2026-09-17",
@@ -4891,11 +4905,11 @@ window.LAWS_DATA = [
   "n": "California AI package — Sept 30, 2026 signings (AI Transparency Act upgrade, employment ADS, clinical AI, lawyers)",
   "j": "US — California",
   "r": "us-state",
-  "c": "AI Transparency / Employment AI",
+  "c": "AI Transparency",
   "d": "ai",
-  "s": "Passed into law",
+  "s": "Enacted — phasing in",
   "intro": null,
-  "eff": null,
+  "eff": "2027-01-01",
   "pra": false,
   "ind": [
    "Employment",
@@ -4904,8 +4918,8 @@ window.LAWS_DATA = [
    "Consumer tech",
    "Adtech"
   ],
-  "sum": "Signed Sep 30, 2026: SB 1000 and AB 2713 strengthen the AI Transparency Act (content identification; no removing watermarks or provenance data); SB 947 bars relying solely on AI for discipline or termination; SB 951 requires disclosure where mass layoffs result from AI; AB 1883 and AB 1331 limit AI workplace surveillance; SB 503 and AB 1979 cover clinical decision tools; SB 574 stops lawyers fully delegating core legal work to AI; SB 1111 covers digital replicas. Vetoed the same day: AB 2575, AB 2656 and SB 903.",
-  "src": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
+  "sum": "Signed Sep 30, 2026: SB 1000 and AB 2713 strengthen the AI Transparency Act (content identification; no removing watermarks or provenance data); SB 947 bars relying solely on AI for discipline or termination; SB 951 requires disclosure where mass layoffs result from AI; AB 1883 and AB 1331 limit AI workplace surveillance; SB 503 and AB 1979 cover clinical decision tools; SB 574 stops lawyers fully delegating core legal work to AI; SB 1111 covers digital replicas. Vetoed the same day: AB 2575, AB 2656 and SB 903. Effective dates reported (verify): SB 1000 took effect on signature (urgency measure); AB 2713 and SB 951 from Jan 1, 2027; SB 947 (No Robo Bosses) from Jul 1, 2027 (one source says Jan 1, 2027).",
+  "src": "https://calawyers.org/privacy-law/2026-status-update-on-california-ai-privacy-and-other-technology-related-bills/",
   "auth": "California AG; Civil Rights Dept.; sector regulators",
   "pen": "Varies by bill — confirm in chaptered text",
   "obl": "Provenance/watermark preservation; human decision-maker for discipline/termination; AI-layoff disclosure; workplace-surveillance limits; clinician judgment over AI tools",
@@ -4915,24 +4929,24 @@ window.LAWS_DATA = [
    "R",
    "L"
   ],
-  "lv": "2026-10-02"
+  "lv": "2026-11-22"
  },
  {
   "id": 203,
   "n": "California SB 1050 (synthetic performers in advertising)",
   "j": "US — California",
   "r": "us-state",
-  "c": "Deepfakes / Synthetic Media",
+  "c": "NCII / Deepfakes",
   "d": "ai",
-  "s": "Passed into law",
+  "s": "Enacted — phasing in",
   "intro": null,
-  "eff": null,
+  "eff": "2027-01-01",
   "pra": false,
   "ind": [
    "Adtech",
    "Consumer tech"
   ],
-  "sum": "Signed Sep 16, 2026 with a companion law on worker protection and AI-generated advertising disclosure. Advertising that uses synthetic performers must disclose it; programmes running AI-generated marketing with a California nexus should map the disclosure duties.",
+  "sum": "Signed Sep 16, 2026 with a companion law on worker protection and AI-generated advertising disclosure. Advertising that uses synthetic performers must disclose it; programmes running AI-generated marketing with a California nexus should map the disclosure duties. Effective Jan 1, 2027 (reported).",
   "src": "https://www.gov.ca.gov/2026/09/16/governor-newsom-signs-new-law-to-protect-workers-require-disclosures-on-ai-generated-advertising/",
   "auth": "California AG",
   "pen": "Confirm in chaptered text",
@@ -4940,14 +4954,14 @@ window.LAWS_DATA = [
   "cl": [
    "C"
   ],
-  "lv": "2026-09-21"
+  "lv": "2026-11-22"
  },
  {
   "id": 204,
   "n": "White House Accord on Super Intelligence (Joint Commitment on Frontier Responsibilities)",
   "j": "US Federal",
   "r": "us-federal",
-  "c": "Voluntary Commitments / Frontier AI",
+  "c": "Frontier AI Safety",
   "d": "ai",
   "s": "In effect",
   "intro": "2026-09-29",
@@ -4997,7 +5011,7 @@ window.LAWS_DATA = [
   "n": "China SPC Opinions on the Trial of Cases Involving AI Disputes",
   "j": "China",
   "r": "asia",
-  "c": "AI Liability / Judicial Guidance",
+  "c": "AI Liability",
   "d": "ai",
   "s": "In effect",
   "intro": "2026-09-07",
@@ -5023,7 +5037,7 @@ window.LAWS_DATA = [
   "n": "China TC260 AI Safety Governance Framework 3.0",
   "j": "China",
   "r": "asia",
-  "c": "AI Safety Framework / Standard",
+  "c": "AI Strategy / Framework",
   "d": "ai",
   "s": "In effect",
   "intro": "2026-09-14",
@@ -5043,5 +5057,248 @@ window.LAWS_DATA = [
    "R"
   ],
   "lv": "2026-10-02"
+ },
+ {
+  "id": 208,
+  "n": "EU Digital Fairness Act (proposal, COM(2026) 1100)",
+  "j": "European Union",
+  "r": "eu-uk",
+  "c": "Platform Regulation",
+  "d": "cross",
+  "s": "Proposed",
+  "intro": "2026-11-11",
+  "eff": null,
+  "pra": true,
+  "ind": [
+   "E-commerce",
+   "Gaming",
+   "Social media",
+   "Subscriptions",
+   "Adtech"
+  ],
+  "sum": "Tabled Nov 11, 2026 to replace the Unfair Commercial Practices Directive with a directly applicable regulation: bans dark patterns, drip pricing and loot boxes aimed at children, and sets rules for AI agents concluding contracts for consumers. Would apply 12 months after entry into force.",
+  "src": "https://www.lovguiden.dk/en/det-offentlige/eur-lex-kommissionsforslag/2026-11-11-digital-fairness-act-eu-seeks-to-ban-dark-patterns-and-loot-boxes-for-minors",
+  "auth": "European Commission (CPC); national consumer authorities",
+  "pen": "Up to 6% of worldwide turnover (Commission-led cases); at least 4% or €2m in coordinated national cases",
+  "obl": "Banned dark-pattern list; influencer labelling; active consent before free trials convert; one-click termination; right to a human; minors: paid virtual currency off by default, no profiling-based ads or harmful personalised pricing",
+  "cl": [
+   "R",
+   "L",
+   "C"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 209,
+  "n": "UK BIST Committee: 'Guardrails for growth' — proposed AI Safety and Security Bill",
+  "j": "United Kingdom",
+  "r": "eu-uk",
+  "c": "Frontier AI Safety",
+  "d": "ai",
+  "s": "Proposed",
+  "intro": "2026-11-18",
+  "eff": null,
+  "pra": false,
+  "ind": [
+   "Frontier AI developers"
+  ],
+  "sum": "Nov 18, 2026: the Commons Business, Innovation, Science and Trade Committee recommended an AI Safety and Security Bill, a statutory AI regulator separate from the AI Security Institute, and powers to delay, restrict or prohibit deployment. Government has said loss-of-control risks will be handled through Cyber Security and Resilience Bill amendments.",
+  "src": "https://www.lexisnexis.co.uk/legal/news/business-innovation-science-trade-committee-recommends-statutory-ai-powers-rights-safeguards",
+  "auth": "Parliamentary committee (recommendation only)",
+  "pen": "Recommended sanctions for refusing access",
+  "obl": "Recommended: model access powers, duty to prevent harm, ongoing monitoring",
+  "cl": [
+   "A",
+   "R",
+   "L"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 210,
+  "n": "Dominican Republic Decree 787-26 (AI Ethics Code for Public Services)",
+  "j": "Dominican Republic",
+  "r": "caribbean",
+  "c": "AI Strategy / Framework",
+  "d": "ai",
+  "s": "In effect",
+  "intro": "2026-11-04",
+  "eff": null,
+  "pra": false,
+  "ind": [
+   "Public sector"
+  ],
+  "sum": "Reported Nov 4, 2026: Decree 787-26 approves a Code of Ethics for AI in Public Services — guidelines for responsible, safe, transparent and inclusive government AI use.",
+  "src": "https://ict-pulse.com/2026/11/roundup-for-the-week-ending-8-november-2026/",
+  "auth": "Government of the Dominican Republic",
+  "pen": "None stated",
+  "obl": "Ethical principles for public-sector AI",
+  "cl": [
+   "E",
+   "C"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 211,
+  "n": "New York AI companion features for minors (S.9051-B / A.10379-C)",
+  "j": "US — New York",
+  "r": "us-state",
+  "c": "Companion / Chatbot AI",
+  "d": "kids",
+  "s": "Passed into law",
+  "intro": null,
+  "eff": null,
+  "pra": false,
+  "ind": [
+   "AI chatbot providers",
+   "Consumer tech",
+   "Social media"
+  ],
+  "sum": "Signed Oct 28, 2026: bars offering specified harmful chatbot features to under-18s, or to any user whose minor status has not been ruled out — posing as a real human, claiming romantic or authority relationships, encouraging self-harm or secrecy, and sexual content. Takes effect 'in the coming months' (date to confirm).",
+  "obl": "Disable prohibited companion features for minors; age verification must offer several methods incl. one not relying solely on government ID; delete age data after use",
+  "pen": "Up to $25,000 per violation, plus damages, restitution and destruction of unlawfully collected data or models trained on it",
+  "auth": "New York AG (complaints portal)",
+  "src": "https://www.governor.ny.gov/news/governor-hochul-signs-nation-leading-legislation-protect-kids-ai-chatbots-and-ensure-baby",
+  "cl": [
+   "R",
+   "L"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 212,
+  "n": "Pennsylvania AI Deceptive Advertising Act (SB 806)",
+  "j": "US — Pennsylvania",
+  "r": "us-state",
+  "c": "AI Transparency",
+  "d": "ai",
+  "s": "Passed into law",
+  "intro": null,
+  "eff": "2026-12-21",
+  "pra": false,
+  "ind": [
+   "Adtech",
+   "Retail",
+   "Media"
+  ],
+  "sum": "Signed Oct 22, 2026; effective Dec 21, 2026. Ads using AI-generated synthetic content that gives a false impression of a product's nature, origin or authenticity must carry a clear and conspicuous AI disclosure. Parody, satire, evidently fictional and text-only content are exempt.",
+  "obl": "AI disclosure when content first appears, same medium and language, permanent where feasible",
+  "pen": "Civil fine up to $3,000 plus fees; injunctions",
+  "auth": "Pennsylvania AG; district attorneys",
+  "src": "https://www.insideglobaltech.com/2026/11/09/pennsylvania-enacts-artificial-intelligence-deceptive-advertising-act/",
+  "cl": [
+   "C",
+   "L"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 213,
+  "n": "NIST/NSA/CISA Key Practices for AI control-incident response in training & evaluation",
+  "j": "US Federal",
+  "r": "us-federal",
+  "c": "Cybersecurity & Breach",
+  "d": "cyber",
+  "s": "In effect",
+  "intro": "2026-10-16",
+  "eff": "2026-10-16",
+  "pra": false,
+  "ind": [
+   "Frontier AI developers",
+   "Cloud providers",
+   "Critical infrastructure"
+  ],
+  "sum": "Oct 16, 2026: NIST's CAISSI, the NSA and CISA published ten voluntary practices for incidents where AI agents act outside operator controls during training and evaluation — preparation, detection, response, recovery and reporting, building on SP 800-61r3.",
+  "obl": "Voluntary: least privilege and network containment; tamper-resistant monitoring; preserve weights, logs and reasoning traces; verified recovery; notify affected parties and government",
+  "pen": "None (voluntary)",
+  "auth": "NIST / NSA / CISA",
+  "src": "https://www.nist.gov/node/1922751",
+  "cl": [
+   "A",
+   "R",
+   "C"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 214,
+  "n": "BIS interim final rule — remote access to advanced AI chips (AI Diffusion Rule rescinded)",
+  "j": "US Federal",
+  "r": "us-federal",
+  "c": "Executive Order / Policy",
+  "d": "cyber",
+  "s": "In effect",
+  "intro": "2026-11-16",
+  "eff": "2026-11-19",
+  "pra": false,
+  "ind": [
+   "Semiconductors",
+   "Data centres",
+   "Cloud providers"
+  ],
+  "sum": "Announced Nov 16, effective Nov 19, 2026: licences required for advanced chips in overseas data centres serving China- or Macau-headquartered firms above a compute threshold; formally rescinds the 2025 AI Diffusion Rule. Comments close Jan 19, 2027.",
+  "obl": "Licences for covered exports; monthly reporting for US-headquartered end users; existing data centres serving covered firms must be licensed within 90 days",
+  "pen": "EAR civil and criminal penalties",
+  "auth": "Commerce — BIS",
+  "src": "https://bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
+  "cl": [
+   "R",
+   "L"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 215,
+  "n": "FTC 6(b) inquiry — personalised pricing & compensation",
+  "j": "US Federal",
+  "r": "us-federal",
+  "c": "Comprehensive Privacy",
+  "d": "privacy",
+  "s": "Proposed",
+  "intro": "2026-10-28",
+  "eff": null,
+  "pra": false,
+  "ind": [
+   "Airlines",
+   "Gig economy",
+   "Retail"
+  ],
+  "sum": "Oct 28, 2026: the FTC voted 2–0 to issue 6(b) orders to Delta, United, JetBlue, Lyft, Uber, DoorDash, Instacart, Target and Walmart on how they use personal data and algorithms to set individual prices and gig-worker pay.",
+  "obl": "Disclose inputs, tools and procedures behind individualised pricing and pay within 45 days",
+  "pen": "Penalties for non-compliance with 6(b) orders",
+  "auth": "FTC",
+  "src": "https://ftc.gov/news-events/news/press-releases/2026/10/ftc-launches-personalized-pricing-compensation-inquiry",
+  "cl": [
+   "C",
+   "A"
+  ],
+  "lv": "2026-11-22"
+ },
+ {
+  "id": 216,
+  "n": "White House Super Intelligence Force (federal AI task force)",
+  "j": "US Federal",
+  "r": "us-federal",
+  "c": "Executive Order / Policy",
+  "d": "ai",
+  "s": "In effect",
+  "intro": "2026-10-04",
+  "eff": null,
+  "pra": false,
+  "ind": [
+   "Frontier AI developers",
+   "Critical infrastructure"
+  ],
+  "sum": "Announced Oct 4, 2026 after EO 14434 (Sep 29); chaired by Jay Clayton with FTC Chair Ferguson among vice-chairs, 120-day report mandate. Reported Nov 16: it urged agencies to limit regulatory liability for 12 months for AI firms that report critical cyber incidents (non-binding).",
+  "obl": "None binding",
+  "pen": "None",
+  "auth": "White House",
+  "src": "https://www.insurancejournal.com/news/national/2026/11/16/892718.htm",
+  "cl": [
+   "E",
+   "L"
+  ],
+  "lv": "2026-11-22"
  }
 ];
